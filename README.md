@@ -2,7 +2,22 @@
 
 Agent skills and small tools from Primitive Labs, an Australian startup. Open source under the Apache License 2.0.
 
-The first skills are on their way.
+## What's here
+
+| Plugin | What it does |
+| --- | --- |
+| [agent craft](plugins/agent-craft) | Five skills for agents that do serious work: runtime pacing, adversarial verification, UI adversarial testing, an expert council review, and retrieval routing patterns. |
+
+## Install
+
+Claude Code:
+
+```
+/plugin marketplace add Primitivelabai/primitive-open
+/plugin install agent-craft@primitive-open
+```
+
+Other agents: every skill is a plain folder with a `SKILL.md`. Copy the ones you want into your agent's skills directory.
 
 ## Licence
 
