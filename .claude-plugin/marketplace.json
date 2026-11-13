@@ -10,7 +10,7 @@
     {
       "name": "agent-craft",
       "source": "./plugins/agent-craft",
-      "description": "Eight skills for agents that do serious work: brief a job properly, pace it, verify claims, attack UI changes, review with five critics, build safe retrieval, check reported work against the record, and scrub before publishing.",
+      "description": "Seven skills for agents that do serious work: brief a job properly, pace it, verify claims, attack UI changes, review with five critics, build safe retrieval, and check reported work against the record.",
       "version": "0.2.0",
       "license": "Apache-2.0"
     }

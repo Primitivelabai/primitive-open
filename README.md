@@ -6,7 +6,7 @@ Agent skills and small tools from Primitive Labs, an Australian startup. Open so
 
 | Plugin | What it does |
 | --- | --- |
-| [agent craft](plugins/agent-craft) | Eight skills for agents that do serious work: job briefs, runtime pacing, adversarial verification, UI adversarial testing, an expert council review, retrieval routing patterns, checking reported work, and an open-source scrub. |
+| [agent craft](plugins/agent-craft) | Seven skills for agents that do serious work: job briefs, runtime pacing, adversarial verification, UI adversarial testing, an expert council review, retrieval routing patterns, and checking reported work. |
 
 ## Install
 

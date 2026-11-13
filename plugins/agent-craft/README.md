@@ -1,6 +1,6 @@
 # agent craft
 
-Eight skills for agents that do serious work, from Primitive Labs.
+Seven skills for agents that do serious work, from Primitive Labs.
 
 Works with Claude Code as a plugin, and with any agent that reads `SKILL.md` folders, including Codex and ChatGPT.
 
@@ -9,8 +9,6 @@ Works with Claude Code as a plugin, and with any agent that reads `SKILL.md` fol
 **job-brief** turns a request into a brief an agent can build from without guessing: what's true when done, what must not change, which shared setup is off limits. The builder answers with a plan from the actual code before writing any.
 
 **check-the-work** verifies "done", "fixed" and "live" against git, CI and the running system, never against the report. A job that ran zero tests has failed, and live means a real person can complete the whole path.
-
-**open-source-scrub** checks something is safe and honest to publish: names, paths, quoted feedback, internal details, the identity in commit emails, who actually wrote it, credits and licence.
 
 **runtime-pacing** gives every agent in a run the same clock, so a helper that joins at minute 4 knows it's minute 4. Agents explore early, converge as the target nears, and stop helpers they no longer need.
 The one rule: *time may change strategy. It must never change authority or acceptance gates.* Includes a portable spec with regression tests (`references/portable-spec.md`).
@@ -28,7 +26,6 @@ The one rule: *time may change strategy. It must never change authority or accep
 Ask your agent things like:
 - "Write a job brief for adding CSV export."
 - "Check the work: the agent says the login fix is live."
-- "Scrub this repo before we make it public."
 - "Apply runtime pacing, 10 minute target."
 - "Adversarially verify this fix before we ship."
 - "Try to break the new checkout form."
