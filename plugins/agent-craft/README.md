@@ -1,6 +1,6 @@
 # agent craft
 
-Seven skills for agents that do serious work, from Primitive Labs.
+Seven skills for agents that do serious work. From **punnet**, primitive's open-source lab.
 
 Works with Claude Code as a plugin, and with any agent that reads `SKILL.md` folders, including Codex and ChatGPT.
 
@@ -38,11 +38,11 @@ Claude Code:
 
 ```
 /plugin marketplace add Primitivelabai/primitive-open
-/plugin install agent-craft@primitive-open
+/plugin install agent-craft@punnet
 ```
 
 Anything else: copy a folder from `skills/` into your agent's skills directory.
 
 ## Licence
 
-Apache License 2.0. See `LICENSE` at the repository root.
+[Apache-2.0](../../LICENSE). Made in Perth by [primitive](https://primitiveai.com.au). https://punnet.dev

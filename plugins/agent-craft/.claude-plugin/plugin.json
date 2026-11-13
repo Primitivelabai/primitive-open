@@ -3,9 +3,9 @@
   "version": "0.2.0",
   "description": "Seven skills for agents that do serious work: brief a job properly, pace it, verify claims, attack UI changes, review with five critics, build safe retrieval, and check reported work against the record.",
   "author": {
-    "name": "Primitive Labs"
+    "name": "punnet by primitive"
   },
-  "homepage": "https://github.com/Primitivelabai/primitive-open",
+  "homepage": "https://punnet.dev",
   "license": "Apache-2.0",
   "keywords": [
     "agents",

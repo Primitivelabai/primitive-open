@@ -1,10 +1,11 @@
 {
-  "name": "primitive-open",
+  "name": "punnet",
   "owner": {
-    "name": "Primitive Labs"
+    "name": "punnet by primitive",
+    "url": "https://punnet.dev"
   },
   "metadata": {
-    "description": "Agent skills and small tools from Primitive Labs."
+    "description": "Agent skills and small tools from punnet, primitive's open-source lab."
   },
   "plugins": [
     {
