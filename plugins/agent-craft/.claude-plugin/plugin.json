@@ -1,7 +1,7 @@
 {
   "name": "agent-craft",
-  "version": "0.1.0",
-  "description": "Five skills for agents that do serious work: pace a run without cutting corners, try to break a claim before believing it, attack a UI change before users do, put work in front of five critics, and build AI search that never hands out authority.",
+  "version": "0.2.0",
+  "description": "Eight skills for agents that do serious work: brief a job properly, pace it, verify claims, attack UI changes, review with five critics, build safe retrieval, check reported work against the record, and scrub before publishing.",
   "author": {
     "name": "Primitive Labs"
   },
@@ -15,7 +15,9 @@
     "multi-agent",
     "latency",
     "rag",
-    "retrieval"
+    "retrieval",
+    "delegation",
+    "open-source"
   ],
   "repository": "https://github.com/Primitivelabai/primitive-open"
 }
