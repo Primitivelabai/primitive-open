@@ -1,0 +1,9 @@
+punnet open
+Copyright 2026 Primitive AI Labs Pty Ltd
+
+The first-party skills and documentation in this repository are made available
+under the Apache License, Version 2.0. See LICENSE.
+
+The retrieval-routing-patterns skill describes architecture patterns observed in
+Spring AI (https://github.com/spring-projects/spring-ai), Apache License 2.0.
+No Spring AI source code is included.

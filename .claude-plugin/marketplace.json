@@ -1,0 +1,19 @@
+{
+  "name": "punnet",
+  "owner": {
+    "name": "punnet by primitive",
+    "url": "https://punnet.dev"
+  },
+  "metadata": {
+    "description": "Agent skills and small tools from punnet, primitive's open-source lab."
+  },
+  "plugins": [
+    {
+      "name": "agent-craft",
+      "source": "./plugins/agent-craft",
+      "description": "Seven skills for agents that do serious work: brief a job properly, pace it, verify claims, attack UI changes, review with five critics, build safe retrieval, and check reported work against the record.",
+      "version": "0.2.0",
+      "license": "Apache-2.0"
+    }
+  ]
+}

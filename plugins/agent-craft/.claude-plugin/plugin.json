@@ -1,0 +1,22 @@
+{
+  "name": "agent-craft",
+  "version": "0.2.0",
+  "description": "Seven skills for agents that do serious work: brief a job properly, pace it, verify claims, attack UI changes, review with five critics, build safe retrieval, and check reported work against the record.",
+  "author": {
+    "name": "punnet by primitive"
+  },
+  "homepage": "https://punnet.dev",
+  "license": "Apache-2.0",
+  "keywords": [
+    "agents",
+    "verification",
+    "review",
+    "testing",
+    "multi-agent",
+    "latency",
+    "rag",
+    "retrieval",
+    "delegation"
+  ],
+  "repository": "https://github.com/Primitivelabai/primitive-open"
+}
