@@ -1,0 +1,184 @@
+{
+  "title": "Ohio weighted quotient and quantum evolution",
+  "seed": 20261117,
+  "environment": {
+    "python": "3.14.6 (tags/v3.14.6:c63aec6, Jun 10 2026, 10:26:10) [MSC v.1944 64 bit (AMD64)]",
+    "numpy": "2.4.6",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "processor": "AMD64 Family 25 Model 97 Stepping 2, AuthenticAMD",
+    "threads": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1"
+    }
+  },
+  "scope": "Synthetic symmetric Hamiltonian; timings are local warm kernel medians. RK4 is approximate; no hardware quantum run.",
+  "benchmarks": [
+    {
+      "n_trits": 3,
+      "full_dimension": 27,
+      "reduced_dimension": 10,
+      "dimension_ratio": 2.7,
+      "full_complex128_state_bytes": 432,
+      "reduced_complex128_state_bytes": 160,
+      "shared_validation_setup_ms": 0.17230003140866756,
+      "intertwining_residual_l2": 4.1331584299074217e-16,
+      "trajectory_difference_l2": 3.9154442000718395e-16,
+      "norm_drift_full": 1.4654943925052066e-14,
+      "full_samples_ms": [
+        2.069599984679371,
+        2.3252000100910664,
+        2.6565000298433006,
+        2.0622999873012304,
+        2.0043000113219023
+      ],
+      "reduced_samples_ms": [
+        0.5794999888166785,
+        0.5602000164799392,
+        0.5480999825522304,
+        0.5455000209622085,
+        0.5510000046342611
+      ],
+      "full_median_ms": 2.069599984679371,
+      "reduced_median_ms": 0.5510000046342611,
+      "warm_kernel_ratio": 3.7560797954132785
+    },
+    {
+      "n_trits": 6,
+      "full_dimension": 729,
+      "reduced_dimension": 28,
+      "dimension_ratio": 26.035714285714285,
+      "full_complex128_state_bytes": 11664,
+      "reduced_complex128_state_bytes": 448,
+      "shared_validation_setup_ms": 0.15079998411238194,
+      "intertwining_residual_l2": 1.1093432864680766e-15,
+      "trajectory_difference_l2": 3.5124896376435453e-16,
+      "norm_drift_full": 1.4837020501090592e-12,
+      "full_samples_ms": [
+        7.255600008647889,
+        7.781199994497001,
+        7.084499986376613,
+        7.88670004112646,
+        7.035000016912818
+      ],
+      "reduced_samples_ms": [
+        0.6621999782510102,
+        0.6416999967768788,
+        0.6405000458471477,
+        0.6379999686032534,
+        0.6413999944925308
+      ],
+      "full_median_ms": 7.255600008647889,
+      "reduced_median_ms": 0.6413999944925308,
+      "warm_kernel_ratio": 11.312129826861701
+    },
+    {
+      "n_trits": 8,
+      "full_dimension": 6561,
+      "reduced_dimension": 45,
+      "dimension_ratio": 145.8,
+      "full_complex128_state_bytes": 104976,
+      "reduced_complex128_state_bytes": 720,
+      "shared_validation_setup_ms": 0.5168000352568924,
+      "intertwining_residual_l2": 1.4665036094577364e-15,
+      "trajectory_difference_l2": 3.4793296468222964e-16,
+      "norm_drift_full": 1.1870948668502024e-11,
+      "full_samples_ms": [
+        38.521100010257214,
+        38.44520001439378,
+        39.873500005342066,
+        38.28779998002574,
+        43.48779999418184
+      ],
+      "reduced_samples_ms": [
+        0.7726000039838254,
+        0.7575000054202974,
+        0.7557000499218702,
+        0.7603999692946672,
+        0.7721000001765788
+      ],
+      "full_median_ms": 38.521100010257214,
+      "reduced_median_ms": 0.7603999692946672,
+      "warm_kernel_ratio": 50.658997324774575
+    },
+    {
+      "n_trits": 10,
+      "full_dimension": 59049,
+      "reduced_dimension": 66,
+      "dimension_ratio": 894.6818181818181,
+      "full_complex128_state_bytes": 944784,
+      "reduced_complex128_state_bytes": 1056,
+      "shared_validation_setup_ms": 4.202299984171987,
+      "intertwining_residual_l2": 2.0386452118789296e-15,
+      "trajectory_difference_l2": 5.357931939935448e-16,
+      "norm_drift_full": 5.1123771882544133e-11,
+      "full_samples_ms": [
+        543.4251999831758,
+        428.3545999787748,
+        422.14249999960884,
+        455.81549999769777,
+        483.2530999556184
+      ],
+      "reduced_samples_ms": [
+        1.435799989849329,
+        1.3877999735996127,
+        1.3936000177636743,
+        1.4010999584570527,
+        1.5922000166028738
+      ],
+      "full_median_ms": 455.81549999769777,
+      "reduced_median_ms": 1.4010999584570527,
+      "warm_kernel_ratio": 325.3268956625051
+    }
+  ],
+  "spectral_validation": {
+    "initial_states": 12,
+    "times_per_state": 81,
+    "comparisons": 972,
+    "max_state_error_l2": 3.602186478789811e-14,
+    "max_norm_drift": 8.881784197001252e-16,
+    "isometry_error": 5.874748045952207e-16,
+    "matrix_intertwining_error": 1.0877919644084146e-15
+  },
+  "negative_control": {
+    "site_term_strength": 0.7,
+    "leakage_operator_norm": 0.6599663291074447,
+    "time": 1.0,
+    "state_error_l2": 0.31659569308601837,
+    "meaning": "Reject exact reduction when the Hamiltonian distinguishes site identity."
+  },
+  "transport": {
+    "closed_address_path": [
+      0,
+      1,
+      2,
+      0
+    ],
+    "rotation_degrees": 60,
+    "frame_return_error": 1.414213562373095,
+    "gauge_covariance_error": 4.440892098500626e-16,
+    "meaning": "Discrete transport example; no continuum manifold or measured physical curvature asserted."
+  },
+  "scaling_formula": [
+    {
+      "n": 3,
+      "full": 27,
+      "symmetric": 10
+    },
+    {
+      "n": 10,
+      "full": 59049,
+      "symmetric": 66
+    },
+    {
+      "n": 12,
+      "full": 531441,
+      "symmetric": 91
+    },
+    {
+      "n": 20,
+      "full": 3486784401,
+      "symmetric": 231
+    }
+  ]
+}
