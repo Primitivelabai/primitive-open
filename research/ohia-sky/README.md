@@ -83,3 +83,7 @@ This verifies the published receipts. Repeating the raw-data search requires acq
 - Legacy Survey DR10 imaging and Tractor catalogue. [Data release](https://www.legacysurvey.org/dr10/description/) · [Profile definitions](https://www.legacysurvey.org/dr10/catalogs/)
 - Struble and Rood Abell redshifts, and Tempel et al. SDSS groups. [Abell redshifts](https://heasarc.gsfc.nasa.gov/W3Browse/galaxy-catalog/abellzcat.html) · [Tempel DR8](https://doi.org/10.1051/0004-6361/201118687) · [Tempel DR12](https://doi.org/10.1051/0004-6361/201730499)
 - DESI DR1 Redrock spectroscopy and NASA/IPAC extragalactic catalogue. [DESI release](https://data.desi.lbl.gov/doc/releases/dr1/) · [NED query interface](https://vo.ned.ipac.caltech.edu/Documents/Guides/Interface/TAP)
+
+## Follow-up
+
+[Round 3 Kepler campaign and Lean proofs](round-3/README.md).
