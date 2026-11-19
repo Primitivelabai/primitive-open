@@ -1,0 +1,8 @@
+'OhioSky.prefix_window' depends on axioms: [propext, Quot.sound]
+'OhioSky.wrapped_window' depends on axioms: [propext, Quot.sound]
+'OhioSky.window_vote' depends on axioms: [propext, Quot.sound]
+'OhioSky.rank_votes' depends on axioms: [propext, Quot.sound]
+'OhioSky.multiple_fold' depends on axioms: [propext]
+'OhioSky.mixed_aperture' depends on axioms: [propext]
+'OhioSky.internal_witness' depends on axioms: [propext, Quot.sound]
+'OhioSky.rounded_clock_residual' does not depend on any axioms
