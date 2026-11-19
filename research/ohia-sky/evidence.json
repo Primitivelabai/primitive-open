@@ -1,0 +1,2920 @@
+{
+  "study": "OHIA Sky exploratory public archive study, v0.1",
+  "date_perth": "2026-11-19",
+  "transit_metrics": {
+    "archive_inputs": {
+      "koi_rows": 9564,
+      "tce_rows": 34032,
+      "eclipsing_binary_rows": 2876
+    },
+    "scope": {
+      "selected_targets": 198,
+      "searched_targets": 167,
+      "searched_by_cohort": {
+        "archive_quiet_search": 42,
+        "confirmed_multi": 16,
+        "confirmed_other": 41,
+        "false_positive_other": 19,
+        "false_positive_stellar": 26,
+        "koi_candidate": 11,
+        "tce_without_koi": 12
+      },
+      "proposed_signals": 1384,
+      "trial_period_interval_days": [
+        0.82,
+        20.0
+      ],
+      "quiet_targets_searched": 42
+    },
+    "recovery": {
+      "confirmed_planets": 56,
+      "confirmeds_in_heldout_target_split": 14,
+      "confirmed_planets_model_called": 46,
+      "known_host_stars": 41,
+      "multi_planet_systems": 12,
+      "confirmed_after_primary_mask": 13,
+      "listed_candidate_events": 6,
+      "uncatalogued_dip_targets": 0,
+      "existing_dr25_for_review": 1
+    },
+    "evaluation": {
+      "labeled_train": 72,
+      "labeled_calibration": 19,
+      "labeled_test": 22,
+      "train_hosts": 55,
+      "calibration_hosts": 16,
+      "test_hosts": 16,
+      "model_threshold": 0.7608097701148863,
+      "test_ohia": {
+        "positive": 16,
+        "negative": 6,
+        "roc_auc": 0.9791666666666667,
+        "average_precision": 0.9924172794117647,
+        "true_calls": 12,
+        "false_calls": 0,
+        "abstentions": 10,
+        "precision": 1.0,
+        "recall": 0.75
+      },
+      "test_bls_strength": {
+        "positive": 16,
+        "negative": 6,
+        "roc_auc": 0.28125,
+        "average_precision": 0.6260339669467959,
+        "true_calls": 0,
+        "false_calls": 0,
+        "abstentions": 22,
+        "precision": null,
+        "recall": 0.0
+      },
+      "test_minimum_split_snr": {
+        "positive": 16,
+        "negative": 6,
+        "roc_auc": 0.46875,
+        "average_precision": 0.7078055882670821,
+        "true_calls": 5,
+        "false_calls": 1,
+        "abstentions": 16,
+        "precision": 0.8333333333333334,
+        "recall": 0.3125
+      }
+    }
+  },
+  "injection_metrics": [
+    {
+      "injected_depth_ppm": 250,
+      "trials": 12,
+      "proposals": 11,
+      "repeat": 11,
+      "calls": 11
+    },
+    {
+      "injected_depth_ppm": 600,
+      "trials": 12,
+      "proposals": 12,
+      "repeat": 12,
+      "calls": 10
+    },
+    {
+      "injected_depth_ppm": 1200,
+      "trials": 12,
+      "proposals": 12,
+      "repeat": 12,
+      "calls": 9
+    }
+  ],
+  "image_metrics": {
+    "fields": {
+      "bootes": 217,
+      "cosmos": 785,
+      "fornax": 820,
+      "segue": 273,
+      "stripe82": 507,
+      "xmm_lss": 660
+    },
+    "test_fields": [
+      "bootes",
+      "segue"
+    ],
+    "pixel_peaks": 3262,
+    "labeled_train": 2064,
+    "labeled_calibration": 626,
+    "labeled_test": 467,
+    "unique_catalogued_extended_detections": 2426,
+    "unique_catalogued_extended_calls": 765,
+    "unmatched_review_rows": 1,
+    "test_ohia": {
+      "positive": 321,
+      "negative": 146,
+      "roc_auc": 0.7864549993598771,
+      "average_precision": 0.8525523332479273,
+      "true_calls": 156,
+      "false_calls": 12,
+      "abstentions": 299,
+      "precision": 0.9285714285714286,
+      "recall": 0.48598130841121495
+    },
+    "test_r_half_light": {
+      "positive": 321,
+      "negative": 146,
+      "roc_auc": 0.7194448000682798,
+      "average_precision": 0.7840953036575296,
+      "true_calls": 176,
+      "false_calls": 21,
+      "abstentions": 270,
+      "precision": 0.8934010152284264,
+      "recall": 0.5482866043613707
+    }
+  },
+  "structure_metrics": {
+    "stellar": {
+      "input_rows_by_field": {
+        "taurus": 45640,
+        "cancer": 38564,
+        "carina": 36248,
+        "volans": 29442,
+        "cetus": 19085,
+        "perseus": 35007
+      },
+      "n_proposals": 6,
+      "n_passes": 6,
+      "unique_sources_in_passing": 790,
+      "unique_heldout_sources_in_passing": 398
+    },
+    "galaxy": {
+      "input_rows_by_field": {
+        "coma_leo": 18868,
+        "hercules": 15963,
+        "virgo": 3927
+      },
+      "n_proposals": 46,
+      "n_passes": 41,
+      "unique_sources_in_passing": 1966,
+      "unique_heldout_sources_in_passing": 931
+    }
+  },
+  "planet_signals": [
+    {
+      "kepid": 7831264,
+      "reference": "Kepler-116 c",
+      "period_d": 13.07147296075268,
+      "archive_period_d": 13.07141889,
+      "epoch_bkjd": 445.0909518671459,
+      "duration_d": 0.10421,
+      "heldout_event_snr": 4.240908930403943,
+      "n_heldout_events": 5,
+      "search_pass": 2,
+      "model_calls": true
+    },
+    {
+      "kepid": 6521045,
+      "reference": "Kepler-100 b",
+      "period_d": 6.887793265781748,
+      "archive_period_d": 6.88707073,
+      "epoch_bkjd": 449.9788071133797,
+      "duration_d": 0.16551,
+      "heldout_event_snr": 7.460551894826113,
+      "n_heldout_events": 11,
+      "search_pass": 2,
+      "model_calls": true
+    },
+    {
+      "kepid": 9763348,
+      "reference": "Kepler-982 b",
+      "period_d": 15.774944175543526,
+      "archive_period_d": 15.77382794,
+      "epoch_bkjd": 453.0155104942103,
+      "duration_d": 0.16551,
+      "heldout_event_snr": 6.721057031506708,
+      "n_heldout_events": 5,
+      "search_pass": 1,
+      "model_calls": true
+    },
+    {
+      "kepid": 5301750,
+      "reference": "Kepler-84 c",
+      "period_d": 12.88110963308436,
+      "archive_period_d": 12.88291395,
+      "epoch_bkjd": 444.3897714047531,
+      "duration_d": 0.16551,
+      "heldout_event_snr": 8.562680221653876,
+      "n_heldout_events": 7,
+      "search_pass": 2,
+      "model_calls": true
+    },
+    {
+      "kepid": 4563268,
+      "reference": "Kepler-625 c",
+      "period_d": 4.165680641583284,
+      "archive_period_d": 4.16536757,
+      "epoch_bkjd": 444.4412172442086,
+      "duration_d": 0.10421,
+      "heldout_event_snr": 5.660995017371897,
+      "n_heldout_events": 17,
+      "search_pass": 2,
+      "model_calls": true
+    },
+    {
+      "kepid": 9892816,
+      "reference": "Kepler-342 b",
+      "period_d": 15.16869052412253,
+      "archive_period_d": 15.17026921,
+      "epoch_bkjd": 451.2539156007402,
+      "duration_d": 0.16551,
+      "heldout_event_snr": 6.700397731200474,
+      "n_heldout_events": 5,
+      "search_pass": 1,
+      "model_calls": true
+    },
+    {
+      "kepid": 8240797,
+      "reference": "Kepler-321 b",
+      "period_d": 4.915942460166791,
+      "archive_period_d": 4.915385452,
+      "epoch_bkjd": 447.2814466247304,
+      "duration_d": 0.10421,
+      "heldout_event_snr": 8.232728595673736,
+      "n_heldout_events": 16,
+      "search_pass": 2,
+      "model_calls": true
+    },
+    {
+      "kepid": 8644288,
+      "reference": "Kepler-18 b",
+      "period_d": 3.5044659082215,
+      "archive_period_d": 3.504691252,
+      "epoch_bkjd": 445.4350948678,
+      "duration_d": 0.0613,
+      "heldout_event_snr": 11.752711713539924,
+      "n_heldout_events": 21,
+      "search_pass": 3,
+      "model_calls": true
+    },
+    {
+      "kepid": 4563268,
+      "reference": "Kepler-625 b",
+      "period_d": 7.750983260716685,
+      "archive_period_d": 7.75192755,
+      "epoch_bkjd": 447.5062172442086,
+      "duration_d": 0.10421,
+      "heldout_event_snr": 8.756622760974649,
+      "n_heldout_events": 10,
+      "search_pass": 1,
+      "model_calls": true
+    },
+    {
+      "kepid": 4157325,
+      "reference": "Kepler-416 b",
+      "period_d": 6.319252196803696,
+      "archive_period_d": 6.31943553,
+      "epoch_bkjd": 448.1968924859857,
+      "duration_d": 0.10421,
+      "heldout_event_snr": 15.329095937217865,
+      "n_heldout_events": 13,
+      "search_pass": 1,
+      "model_calls": true
+    },
+    {
+      "kepid": 8616637,
+      "reference": "Kepler-190 c",
+      "period_d": 3.762996523370222,
+      "archive_period_d": 3.763041531,
+      "epoch_bkjd": 444.92692324602433,
+      "duration_d": 0.0613,
+      "heldout_event_snr": 9.075268182535432,
+      "n_heldout_events": 20,
+      "search_pass": 1,
+      "model_calls": true
+    },
+    {
+      "kepid": 11954842,
+      "reference": "Kepler-883 b",
+      "period_d": 12.98467157250376,
+      "archive_period_d": 12.98494603,
+      "epoch_bkjd": 451.417881928481,
+      "duration_d": 0.16551,
+      "heldout_event_snr": 6.5895771743765,
+      "n_heldout_events": 5,
+      "search_pass": 1,
+      "model_calls": true
+    },
+    {
+      "kepid": 7440748,
+      "reference": "Kepler-161 b",
+      "period_d": 4.921465714314218,
+      "archive_period_d": 4.9213639,
+      "epoch_bkjd": 444.9757826888288,
+      "duration_d": 0.0613,
+      "heldout_event_snr": 14.419568477869346,
+      "n_heldout_events": 16,
+      "search_pass": 1,
+      "model_calls": true
+    },
+    {
+      "kepid": 11402995,
+      "reference": "Kepler-481 b",
+      "period_d": 10.060325150828906,
+      "archive_period_d": 10.06083238,
+      "epoch_bkjd": 450.8576278710996,
+      "duration_d": 0.16551,
+      "heldout_event_snr": 17.806482962288683,
+      "n_heldout_events": 9,
+      "search_pass": 1,
+      "model_calls": true
+    },
+    {
+      "kepid": 8344004,
+      "reference": "Kepler-188 c",
+      "period_d": 5.996155811753088,
+      "archive_period_d": 5.996533443,
+      "epoch_bkjd": 448.3510276527956,
+      "duration_d": 0.10421,
+      "heldout_event_snr": 11.4136101359954,
+      "n_heldout_events": 14,
+      "search_pass": 1,
+      "model_calls": true
+    },
+    {
+      "kepid": 6365156,
+      "reference": "Kepler-639 b",
+      "period_d": 10.213499627685222,
+      "archive_period_d": 10.21418792,
+      "epoch_bkjd": 446.4938388424672,
+      "duration_d": 0.2452,
+      "heldout_event_snr": 10.078926968247234,
+      "n_heldout_events": 7,
+      "search_pass": 1,
+      "model_calls": true
+    },
+    {
+      "kepid": 8008067,
+      "reference": "Kepler-139 b",
+      "period_d": 15.772441635360506,
+      "archive_period_d": 15.77111067,
+      "epoch_bkjd": 453.0076986733244,
+      "duration_d": 0.16551,
+      "heldout_event_snr": 24.008993254622464,
+      "n_heldout_events": 5,
+      "search_pass": 1,
+      "model_calls": true
+    },
+    {
+      "kepid": 10925104,
+      "reference": "Kepler-114 b",
+      "period_d": 5.18828305515511,
+      "archive_period_d": 5.188563677,
+      "epoch_bkjd": 446.302871525712,
+      "duration_d": 0.10421,
+      "heldout_event_snr": 10.858718558024302,
+      "n_heldout_events": 13,
+      "search_pass": 3,
+      "model_calls": true
+    },
+    {
+      "kepid": 11656246,
+      "reference": "Kepler-885 b",
+      "period_d": 18.11518754612356,
+      "archive_period_d": 18.11473813,
+      "epoch_bkjd": 455.4512803478797,
+      "duration_d": 0.16551,
+      "heldout_event_snr": 12.5339069994903,
+      "n_heldout_events": 4,
+      "search_pass": 1,
+      "model_calls": true
+    },
+    {
+      "kepid": 6541920,
+      "reference": "Kepler-11 c",
+      "period_d": 13.024003571785324,
+      "archive_period_d": 13.02493307,
+      "epoch_bkjd": 450.7834778714383,
+      "duration_d": 0.16551,
+      "heldout_event_snr": 11.140544821570192,
+      "n_heldout_events": 5,
+      "search_pass": 1,
+      "model_calls": true
+    },
+    {
+      "kepid": 9631762,
+      "reference": "Kepler-615 b",
+      "period_d": 10.35526169679238,
+      "archive_period_d": 10.35586478,
+      "epoch_bkjd": 444.9304435276342,
+      "duration_d": 0.10421,
+      "heldout_event_snr": 10.054666360579164,
+      "n_heldout_events": 8,
+      "search_pass": 1,
+      "model_calls": true
+    },
+    {
+      "kepid": 4914423,
+      "reference": "Kepler-103 b",
+      "period_d": 15.965333131239404,
+      "archive_period_d": 15.96532718,
+      "epoch_bkjd": 445.5244429255168,
+      "duration_d": 0.16551,
+      "heldout_event_snr": 21.860308938280777,
+      "n_heldout_events": 6,
+      "search_pass": 1,
+      "model_calls": true
+    },
+    {
+      "kepid": 8711794,
+      "reference": "Kepler-463 b",
+      "period_d": 8.980404895654333,
+      "archive_period_d": 8.981014925,
+      "epoch_bkjd": 450.9908710758234,
+      "duration_d": 0.0613,
+      "heldout_event_snr": 28.82966426517506,
+      "n_heldout_events": 9,
+      "search_pass": 1,
+      "model_calls": true
+    },
+    {
+      "kepid": 10454313,
+      "reference": "Kepler-588 b",
+      "period_d": 4.22154014915674,
+      "archive_period_d": 4.221626193,
+      "epoch_bkjd": 448.1118266238875,
+      "duration_d": 0.10421,
+      "heldout_event_snr": 16.817328939195217,
+      "n_heldout_events": 20,
+      "search_pass": 1,
+      "model_calls": true
+    },
+    {
+      "kepid": 10925104,
+      "reference": "Kepler-114 c",
+      "period_d": 8.041172036319926,
+      "archive_period_d": 8.041347775,
+      "epoch_bkjd": 448.613881525712,
+      "duration_d": 0.10421,
+      "heldout_event_snr": 16.141537571924523,
+      "n_heldout_events": 10,
+      "search_pass": 2,
+      "model_calls": true
+    },
+    {
+      "kepid": 4157325,
+      "reference": "Kepler-416 c",
+      "period_d": 12.210097882286616,
+      "archive_period_d": 12.20951755,
+      "epoch_bkjd": 445.7816724859857,
+      "duration_d": 0.16551,
+      "heldout_event_snr": 9.31727481591053,
+      "n_heldout_events": 6,
+      "search_pass": 2,
+      "model_calls": true
+    },
+    {
+      "kepid": 4157325,
+      "reference": "Kepler-416 d",
+      "period_d": 3.076452260372873,
+      "archive_period_d": 3.07644709,
+      "epoch_bkjd": 446.0513924859857,
+      "duration_d": 0.10421,
+      "heldout_event_snr": 6.138691505557534,
+      "n_heldout_events": 27,
+      "search_pass": 2,
+      "model_calls": true
+    },
+    {
+      "kepid": 6521045,
+      "reference": "Kepler-100 c",
+      "period_d": 12.816156623896314,
+      "archive_period_d": 12.81590421,
+      "epoch_bkjd": 456.1486521133797,
+      "duration_d": 0.2452,
+      "heldout_event_snr": 17.628739605989026,
+      "n_heldout_events": 5,
+      "search_pass": 1,
+      "model_calls": true
+    },
+    {
+      "kepid": 10843590,
+      "reference": "Kepler-153 b",
+      "period_d": 18.86900303649506,
+      "archive_period_d": 18.87022157,
+      "epoch_bkjd": 461.7757278256869,
+      "duration_d": 0.10421,
+      "heldout_event_snr": 15.093966188294097,
+      "n_heldout_events": 5,
+      "search_pass": 1,
+      "model_calls": true
+    },
+    {
+      "kepid": 8802165,
+      "reference": "Kepler-648 b",
+      "period_d": 17.41988948936997,
+      "archive_period_d": 17.42115972,
+      "epoch_bkjd": 445.5678483481484,
+      "duration_d": 0.16551,
+      "heldout_event_snr": 25.66847593623764,
+      "n_heldout_events": 5,
+      "search_pass": 1,
+      "model_calls": true
+    },
+    {
+      "kepid": 12459913,
+      "reference": "Kepler-620 b",
+      "period_d": 12.909904811766978,
+      "archive_period_d": 12.91385906,
+      "epoch_bkjd": 448.5007825133737,
+      "duration_d": 0.2452,
+      "heldout_event_snr": 6.606534351787666,
+      "n_heldout_events": 6,
+      "search_pass": 1,
+      "model_calls": true
+    },
+    {
+      "kepid": 4644952,
+      "reference": "Kepler-319 c",
+      "period_d": 6.940940042929106,
+      "archive_period_d": 6.94135824,
+      "epoch_bkjd": 449.9084209994824,
+      "duration_d": 0.0613,
+      "heldout_event_snr": 5.299766431550565,
+      "n_heldout_events": 11,
+      "search_pass": 1,
+      "model_calls": true
+    },
+    {
+      "kepid": 8344004,
+      "reference": "Kepler-188 b",
+      "period_d": 2.061936630085063,
+      "archive_period_d": 2.06190864,
+      "epoch_bkjd": 444.5442976527956,
+      "duration_d": 0.10421,
+      "heldout_event_snr": 4.496319774918909,
+      "n_heldout_events": 37,
+      "search_pass": 2,
+      "model_calls": true
+    },
+    {
+      "kepid": 9157634,
+      "reference": "Kepler-586 b",
+      "period_d": 2.104807464898959,
+      "archive_period_d": 2.104721971,
+      "epoch_bkjd": 444.6508144486521,
+      "duration_d": 0.0613,
+      "heldout_event_snr": 24.14389818286628,
+      "n_heldout_events": 39,
+      "search_pass": 1,
+      "model_calls": true
+    },
+    {
+      "kepid": 5301750,
+      "reference": "Kepler-84 b",
+      "period_d": 8.725798294731607,
+      "archive_period_d": 8.72585478,
+      "epoch_bkjd": 444.16499462321065,
+      "duration_d": 0.16551,
+      "heldout_event_snr": 5.283990961641717,
+      "n_heldout_events": 10,
+      "search_pass": 1,
+      "model_calls": true
+    },
+    {
+      "kepid": 7440748,
+      "reference": "Kepler-161 c",
+      "period_d": 7.06375565407747,
+      "archive_period_d": 7.064252021,
+      "epoch_bkjd": 446.2140426888288,
+      "duration_d": 0.0613,
+      "heldout_event_snr": 7.032959121861406,
+      "n_heldout_events": 11,
+      "search_pass": 1,
+      "model_calls": true
+    },
+    {
+      "kepid": 6508221,
+      "reference": "Kepler-152 b",
+      "period_d": 18.207740025827167,
+      "archive_period_d": 18.20795835,
+      "epoch_bkjd": 458.9615924614769,
+      "duration_d": 0.16551,
+      "heldout_event_snr": 26.104832390056064,
+      "n_heldout_events": 5,
+      "search_pass": 1,
+      "model_calls": true
+    },
+    {
+      "kepid": 5094751,
+      "reference": "Kepler-109 b",
+      "period_d": 6.481758212176914,
+      "archive_period_d": 6.481633073,
+      "epoch_bkjd": 447.0588929553074,
+      "duration_d": 0.16551,
+      "heldout_event_snr": 18.27874010859611,
+      "n_heldout_events": 11,
+      "search_pass": 1,
+      "model_calls": true
+    },
+    {
+      "kepid": 4349452,
+      "reference": "Kepler-25 b",
+      "period_d": 6.238670797709499,
+      "archive_period_d": 6.238535444,
+      "epoch_bkjd": 446.1968502403944,
+      "duration_d": 0.16551,
+      "heldout_event_snr": 39.72609451929176,
+      "n_heldout_events": 13,
+      "search_pass": 2,
+      "model_calls": true
+    },
+    {
+      "kepid": 8644288,
+      "reference": "Kepler-18 c",
+      "period_d": 7.642316914843114,
+      "archive_period_d": 7.641567589,
+      "epoch_bkjd": 448.7115798678,
+      "duration_d": 0.10421,
+      "heldout_event_snr": 64.15024707207577,
+      "n_heldout_events": 11,
+      "search_pass": 2,
+      "model_calls": true
+    },
+    {
+      "kepid": 8950568,
+      "reference": "Kepler-85 b",
+      "period_d": 8.305587724286047,
+      "archive_period_d": 8.30537702,
+      "epoch_bkjd": 447.0630876854081,
+      "duration_d": 0.10421,
+      "heldout_event_snr": 6.938875532775567,
+      "n_heldout_events": 10,
+      "search_pass": 1,
+      "model_calls": true
+    },
+    {
+      "kepid": 8240797,
+      "reference": "Kepler-321 c",
+      "period_d": 13.09547638914373,
+      "archive_period_d": 13.09390911,
+      "epoch_bkjd": 445.6815166247304,
+      "duration_d": 0.10421,
+      "heldout_event_snr": 5.088290044277272,
+      "n_heldout_events": 6,
+      "search_pass": 1,
+      "model_calls": true
+    },
+    {
+      "kepid": 8162789,
+      "reference": "Kepler-1989 b",
+      "period_d": 10.160274268826155,
+      "archive_period_d": 10.161023528,
+      "epoch_bkjd": 446.358114690297,
+      "duration_d": 0.10421,
+      "heldout_event_snr": 11.848906327902936,
+      "n_heldout_events": 3,
+      "search_pass": 1,
+      "model_calls": true
+    },
+    {
+      "kepid": 10925104,
+      "reference": "Kepler-114 d",
+      "period_d": 11.774638367693283,
+      "archive_period_d": 11.776132317,
+      "epoch_bkjd": 448.895861525712,
+      "duration_d": 0.10421,
+      "heldout_event_snr": 13.002425186066652,
+      "n_heldout_events": 6,
+      "search_pass": 1,
+      "model_calls": true
+    },
+    {
+      "kepid": 4545187,
+      "reference": "Kepler-121 b",
+      "period_d": 3.177365103181153,
+      "archive_period_d": 3.177414601,
+      "epoch_bkjd": 445.8668907156677,
+      "duration_d": 0.0613,
+      "heldout_event_snr": 16.907695467337977,
+      "n_heldout_events": 26,
+      "search_pass": 1,
+      "model_calls": true
+    },
+    {
+      "kepid": 4349452,
+      "reference": "Kepler-25 c",
+      "period_d": 12.721102420708371,
+      "archive_period_d": 12.720370263,
+      "epoch_bkjd": 445.6512802403944,
+      "duration_d": 0.10421,
+      "heldout_event_snr": 54.319018954280494,
+      "n_heldout_events": 7,
+      "search_pass": 1,
+      "model_calls": true
+    },
+    {
+      "kepid": 10328393,
+      "reference": "Kepler-332 b",
+      "period_d": 7.625641703716397,
+      "archive_period_d": 7.62635494,
+      "epoch_bkjd": 448.7001284004408,
+      "duration_d": 0.10421,
+      "heldout_event_snr": 4.320424453631551,
+      "n_heldout_events": 12,
+      "search_pass": 1,
+      "model_calls": false
+    },
+    {
+      "kepid": 8644288,
+      "reference": "Kepler-18 d",
+      "period_d": 14.858125592759928,
+      "archive_period_d": 14.85890852,
+      "epoch_bkjd": 455.0561298678,
+      "duration_d": 0.10421,
+      "heldout_event_snr": 8.590279664348587,
+      "n_heldout_events": 5,
+      "search_pass": 1,
+      "model_calls": false
+    },
+    {
+      "kepid": 7831264,
+      "reference": "Kepler-116 b",
+      "period_d": 5.968667850997728,
+      "archive_period_d": 5.968724048,
+      "epoch_bkjd": 447.530691867146,
+      "duration_d": 0.16551,
+      "heldout_event_snr": 21.84224948259472,
+      "n_heldout_events": 14,
+      "search_pass": 1,
+      "model_calls": false
+    },
+    {
+      "kepid": 8616637,
+      "reference": "Kepler-190 b",
+      "period_d": 2.019935960228684,
+      "archive_period_d": 2.019997006,
+      "epoch_bkjd": 444.7981932460243,
+      "duration_d": 0.0613,
+      "heldout_event_snr": 8.527877559023445,
+      "n_heldout_events": 38,
+      "search_pass": 1,
+      "model_calls": false
+    },
+    {
+      "kepid": 3937519,
+      "reference": "Kepler-495 b",
+      "period_d": 3.412945169417846,
+      "archive_period_d": 3.413036353,
+      "epoch_bkjd": 446.4461818903303,
+      "duration_d": 0.10421,
+      "heldout_event_snr": 75.07325034123757,
+      "n_heldout_events": 23,
+      "search_pass": 1,
+      "model_calls": false
+    },
+    {
+      "kepid": 8142942,
+      "reference": "Kepler-1782 b",
+      "period_d": 5.756306021776338,
+      "archive_period_d": 5.756245244,
+      "epoch_bkjd": 444.7415015993208,
+      "duration_d": 0.0613,
+      "heldout_event_snr": 9.567632447407735,
+      "n_heldout_events": 14,
+      "search_pass": 1,
+      "model_calls": false
+    },
+    {
+      "kepid": 5728139,
+      "reference": "Kepler-433 b",
+      "period_d": 5.334110046478825,
+      "archive_period_d": 5.334082429,
+      "epoch_bkjd": 446.6936809504529,
+      "duration_d": 0.2452,
+      "heldout_event_snr": 115.7793806316411,
+      "n_heldout_events": 15,
+      "search_pass": 1,
+      "model_calls": false
+    },
+    {
+      "kepid": 7046804,
+      "reference": "Kepler-492 b",
+      "period_d": 11.719085743427698,
+      "archive_period_d": 11.720123999,
+      "epoch_bkjd": 446.905346601421,
+      "duration_d": 0.10421,
+      "heldout_event_snr": 66.4103395831901,
+      "n_heldout_events": 7,
+      "search_pass": 1,
+      "model_calls": false
+    },
+    {
+      "kepid": 8359498,
+      "reference": "Kepler-77 b",
+      "period_d": 3.578936024104605,
+      "archive_period_d": 3.578780566,
+      "epoch_bkjd": 445.3835279368564,
+      "duration_d": 0.10421,
+      "heldout_event_snr": 121.5574461633644,
+      "n_heldout_events": 23,
+      "search_pass": 1,
+      "model_calls": false
+    },
+    {
+      "kepid": 10318874,
+      "reference": "Kepler-94 b",
+      "period_d": 2.508003427752624,
+      "archive_period_d": 2.508057497,
+      "epoch_bkjd": 446.0022832749906,
+      "duration_d": 0.0613,
+      "heldout_event_snr": 20.44061238677926,
+      "n_heldout_events": 32,
+      "search_pass": 1,
+      "model_calls": false
+    }
+  ],
+  "stellar_membership_checks": [
+    {
+      "id": "GAIA-carina-00",
+      "catalog_name": "UBC_247",
+      "reference_id": 6204,
+      "inside_gate": 34,
+      "catalogue_id_matches": 32,
+      "inside_heldout_gate": 15,
+      "catalogue_heldout_id_matches": 13,
+      "match_fraction": 0.941176470588235
+    },
+    {
+      "id": "GAIA-carina-01",
+      "catalog_name": "NGC_2669",
+      "reference_id": 4603,
+      "inside_gate": 85,
+      "catalogue_id_matches": 79,
+      "inside_heldout_gate": 44,
+      "catalogue_heldout_id_matches": 41,
+      "match_fraction": 0.929411764705882
+    },
+    {
+      "id": "GAIA-carina-02",
+      "catalog_name": "UBC_1455",
+      "reference_id": 6801,
+      "inside_gate": 72,
+      "catalogue_id_matches": 65,
+      "inside_heldout_gate": 29,
+      "catalogue_heldout_id_matches": 28,
+      "match_fraction": 0.902777777777778
+    },
+    {
+      "id": "GAIA-volans-00",
+      "catalog_name": "NGC_2516",
+      "reference_id": 4585,
+      "inside_gate": 434,
+      "catalogue_id_matches": 434,
+      "inside_heldout_gate": 223,
+      "catalogue_heldout_id_matches": 223,
+      "match_fraction": 1.0
+    },
+    {
+      "id": "GAIA-cetus-00",
+      "catalog_name": "Blanco_1",
+      "reference_id": 281,
+      "inside_gate": 127,
+      "catalogue_id_matches": 127,
+      "inside_heldout_gate": 69,
+      "catalogue_heldout_id_matches": 69,
+      "match_fraction": 1.0
+    },
+    {
+      "id": "GAIA-perseus-00",
+      "catalog_name": "COIN-Gaia_38",
+      "reference_id": 325,
+      "inside_gate": 38,
+      "catalogue_id_matches": 38,
+      "inside_heldout_gate": 18,
+      "catalogue_heldout_id_matches": 18,
+      "match_fraction": 1.0
+    }
+  ],
+  "galaxy_windows": [
+    {
+      "id": "SDSS-coma_leo-00-00",
+      "ra": 194.929225,
+      "dec": 27.932655500000003,
+      "redshift": 0.02289302,
+      "heldout_n": 37,
+      "abell_match": "Abell 1656",
+      "tempel_match": null,
+      "tempel_dr8_match": "Tempel DR8 49298"
+    },
+    {
+      "id": "SDSS-coma_leo-00-01",
+      "ra": 195.0181,
+      "dec": 27.9703235,
+      "redshift": 0.026127205,
+      "heldout_n": 32,
+      "abell_match": "Abell 1656",
+      "tempel_match": "Tempel DR12 1545",
+      "tempel_dr8_match": "Tempel DR8 49298"
+    },
+    {
+      "id": "SDSS-coma_leo-00-02",
+      "ra": 194.31994,
+      "dec": 27.506298,
+      "redshift": 0.02450164,
+      "heldout_n": 27,
+      "abell_match": null,
+      "tempel_match": "Tempel DR12 1549",
+      "tempel_dr8_match": "Tempel DR8 49298"
+    },
+    {
+      "id": "SDSS-coma_leo-00-03",
+      "ra": 194.8189,
+      "dec": 27.8650665,
+      "redshift": 0.019671425,
+      "heldout_n": 26,
+      "abell_match": "Abell 1656",
+      "tempel_match": null,
+      "tempel_dr8_match": "Tempel DR8 49298"
+    },
+    {
+      "id": "SDSS-coma_leo-01-00",
+      "ra": 181.022145,
+      "dec": 20.258492,
+      "redshift": 0.022617355,
+      "heldout_n": 21,
+      "abell_match": null,
+      "tempel_match": null,
+      "tempel_dr8_match": "Tempel DR8 42643"
+    },
+    {
+      "id": "SDSS-coma_leo-03-00",
+      "ra": 178.2056,
+      "dec": 20.625473,
+      "redshift": 0.02253064,
+      "heldout_n": 16,
+      "abell_match": null,
+      "tempel_match": null,
+      "tempel_dr8_match": null
+    },
+    {
+      "id": "SDSS-coma_leo-04-00",
+      "ra": 176.375955,
+      "dec": 15.5218915,
+      "redshift": 0.068048095,
+      "heldout_n": 14,
+      "abell_match": null,
+      "tempel_match": null,
+      "tempel_dr8_match": "Tempel DR8 21573"
+    },
+    {
+      "id": "SDSS-coma_leo-05-00",
+      "ra": 195.95044,
+      "dec": 19.2623415,
+      "redshift": 0.064799765,
+      "heldout_n": 13,
+      "abell_match": "Abell 1668",
+      "tempel_match": null,
+      "tempel_dr8_match": "Tempel DR8 43966"
+    },
+    {
+      "id": "SDSS-coma_leo-06-00",
+      "ra": 190.29558,
+      "dec": 18.540715,
+      "redshift": 0.072406965,
+      "heldout_n": 32,
+      "abell_match": "Abell 1589",
+      "tempel_match": null,
+      "tempel_dr8_match": "Tempel DR8 40870"
+    },
+    {
+      "id": "SDSS-coma_leo-07-00",
+      "ra": 175.99459,
+      "dec": 19.95581,
+      "redshift": 0.02120879,
+      "heldout_n": 37,
+      "abell_match": "Abell 1367",
+      "tempel_match": null,
+      "tempel_dr8_match": null
+    },
+    {
+      "id": "SDSS-coma_leo-08-00",
+      "ra": 199.98658,
+      "dec": 33.100382,
+      "redshift": 0.03660825,
+      "heldout_n": 15,
+      "abell_match": null,
+      "tempel_match": null,
+      "tempel_dr8_match": "Tempel DR8 17574"
+    },
+    {
+      "id": "SDSS-coma_leo-09-00",
+      "ra": 186.46595,
+      "dec": 31.274725,
+      "redshift": 0.060404985,
+      "heldout_n": 20,
+      "abell_match": null,
+      "tempel_match": null,
+      "tempel_dr8_match": "Tempel DR8 71958"
+    },
+    {
+      "id": "SDSS-coma_leo-10-00",
+      "ra": 170.52689,
+      "dec": 34.357077,
+      "redshift": 0.03489117,
+      "heldout_n": 25,
+      "abell_match": "Abell 1228",
+      "tempel_match": null,
+      "tempel_dr8_match": "Tempel DR8 19849"
+    },
+    {
+      "id": "SDSS-coma_leo-11-00",
+      "ra": 182.035085,
+      "dec": 25.245735,
+      "redshift": 0.022405905,
+      "heldout_n": 12,
+      "abell_match": null,
+      "tempel_match": null,
+      "tempel_dr8_match": "Tempel DR8 47770"
+    },
+    {
+      "id": "SDSS-coma_leo-13-00",
+      "ra": 176.26283,
+      "dec": 33.353224,
+      "redshift": 0.031791,
+      "heldout_n": 30,
+      "abell_match": null,
+      "tempel_match": null,
+      "tempel_dr8_match": "Tempel DR8 18826"
+    },
+    {
+      "id": "SDSS-coma_leo-14-00",
+      "ra": 194.80564,
+      "dec": 31.33838,
+      "redshift": 0.05175586,
+      "heldout_n": 15,
+      "abell_match": null,
+      "tempel_match": null,
+      "tempel_dr8_match": "Tempel DR8 68039"
+    },
+    {
+      "id": "SDSS-coma_leo-19-00",
+      "ra": 186.147555,
+      "dec": 32.0277915,
+      "redshift": 0.06076125,
+      "heldout_n": 18,
+      "abell_match": null,
+      "tempel_match": null,
+      "tempel_dr8_match": "Tempel DR8 63104"
+    },
+    {
+      "id": "SDSS-coma_leo-20-00",
+      "ra": 199.89697,
+      "dec": 31.351985,
+      "redshift": 0.04643347,
+      "heldout_n": 13,
+      "abell_match": null,
+      "tempel_match": "Tempel DR12 52231",
+      "tempel_dr8_match": "Tempel DR8 20985"
+    },
+    {
+      "id": "SDSS-coma_leo-22-00",
+      "ra": 173.74932,
+      "dec": 21.09793,
+      "redshift": 0.06335831,
+      "heldout_n": 15,
+      "abell_match": null,
+      "tempel_match": null,
+      "tempel_dr8_match": "Tempel DR8 19789"
+    },
+    {
+      "id": "SDSS-coma_leo-23-00",
+      "ra": 170.54173,
+      "dec": 34.028491,
+      "redshift": 0.04238466,
+      "heldout_n": 16,
+      "abell_match": null,
+      "tempel_match": null,
+      "tempel_dr8_match": "Tempel DR8 19850"
+    },
+    {
+      "id": "SDSS-hercules-00-00",
+      "ra": 234.948515,
+      "dec": 21.7719265,
+      "redshift": 0.04151871,
+      "heldout_n": 36,
+      "abell_match": "Abell 2107",
+      "tempel_match": null,
+      "tempel_dr8_match": "Tempel DR8 793"
+    },
+    {
+      "id": "SDSS-hercules-01-00",
+      "ra": 241.59197,
+      "dec": 15.638058,
+      "redshift": 0.03977014,
+      "heldout_n": 26,
+      "abell_match": null,
+      "tempel_match": null,
+      "tempel_dr8_match": "Tempel DR8 25913"
+    },
+    {
+      "id": "SDSS-hercules-02-00",
+      "ra": 241.374975,
+      "dec": 16.391847,
+      "redshift": 0.044414115,
+      "heldout_n": 26,
+      "abell_match": null,
+      "tempel_match": "Tempel DR12 2414",
+      "tempel_dr8_match": null
+    },
+    {
+      "id": "SDSS-hercules-03-00",
+      "ra": 233.19407,
+      "dec": 28.063139,
+      "redshift": 0.07348981,
+      "heldout_n": 20,
+      "abell_match": "Abell 2089",
+      "tempel_match": null,
+      "tempel_dr8_match": "Tempel DR8 39914"
+    },
+    {
+      "id": "SDSS-hercules-06-00",
+      "ra": 241.52409,
+      "dec": 18.222898,
+      "redshift": 0.03801261,
+      "heldout_n": 41,
+      "abell_match": "Abell 2151",
+      "tempel_match": null,
+      "tempel_dr8_match": null
+    },
+    {
+      "id": "SDSS-hercules-06-01",
+      "ra": 241.30173,
+      "dec": 17.744386,
+      "redshift": 0.03402218,
+      "heldout_n": 36,
+      "abell_match": "Abell 2151",
+      "tempel_match": null,
+      "tempel_dr8_match": null
+    },
+    {
+      "id": "SDSS-hercules-07-00",
+      "ra": 230.5616,
+      "dec": 27.807409,
+      "redshift": 0.07277348,
+      "heldout_n": 21,
+      "abell_match": "Abell 2065",
+      "tempel_match": null,
+      "tempel_dr8_match": "Tempel DR8 39489"
+    },
+    {
+      "id": "SDSS-hercules-08-00",
+      "ra": 239.12216,
+      "dec": 20.031768,
+      "redshift": 0.04969361,
+      "heldout_n": 13,
+      "abell_match": null,
+      "tempel_match": "Tempel DR12 20576",
+      "tempel_dr8_match": "Tempel DR8 2674"
+    },
+    {
+      "id": "SDSS-hercules-09-00",
+      "ra": 240.64069,
+      "dec": 16.168888,
+      "redshift": 0.03793277,
+      "heldout_n": 51,
+      "abell_match": "Abell 2147",
+      "tempel_match": null,
+      "tempel_dr8_match": "Tempel DR8 24918"
+    },
+    {
+      "id": "SDSS-hercules-09-01",
+      "ra": 240.581415,
+      "dec": 15.9190495,
+      "redshift": 0.03406226,
+      "heldout_n": 33,
+      "abell_match": "Abell 2147",
+      "tempel_match": null,
+      "tempel_dr8_match": "Tempel DR8 41302"
+    },
+    {
+      "id": "SDSS-hercules-11-00",
+      "ra": 239.06919,
+      "dec": 28.832021,
+      "redshift": 0.07712273,
+      "heldout_n": 25,
+      "abell_match": null,
+      "tempel_match": null,
+      "tempel_dr8_match": "Tempel DR8 29348"
+    },
+    {
+      "id": "SDSS-hercules-12-00",
+      "ra": 246.79713,
+      "dec": 13.9797915,
+      "redshift": 0.05146774,
+      "heldout_n": 13,
+      "abell_match": null,
+      "tempel_match": null,
+      "tempel_dr8_match": "Tempel DR8 42481"
+    },
+    {
+      "id": "SDSS-hercules-14-00",
+      "ra": 237.38922,
+      "dec": 25.627809,
+      "redshift": 0.06982961,
+      "heldout_n": 14,
+      "abell_match": null,
+      "tempel_match": null,
+      "tempel_dr8_match": "Tempel DR8 39989"
+    },
+    {
+      "id": "SDSS-hercules-15-00",
+      "ra": 248.787155,
+      "dec": 26.6433685,
+      "redshift": 0.070456675,
+      "heldout_n": 27,
+      "abell_match": null,
+      "tempel_match": "Tempel DR12 24506",
+      "tempel_dr8_match": "Tempel DR8 30391"
+    },
+    {
+      "id": "SDSS-hercules-20-00",
+      "ra": 238.904175,
+      "dec": 27.0067155,
+      "redshift": 0.082885085,
+      "heldout_n": 20,
+      "abell_match": null,
+      "tempel_match": null,
+      "tempel_dr8_match": "Tempel DR8 69537"
+    },
+    {
+      "id": "SDSS-hercules-22-00",
+      "ra": 231.8043,
+      "dec": 28.6568075,
+      "redshift": 0.064928275,
+      "heldout_n": 17,
+      "abell_match": "Abell 2079",
+      "tempel_match": null,
+      "tempel_dr8_match": "Tempel DR8 39752"
+    },
+    {
+      "id": "SDSS-hercules-26-00",
+      "ra": 231.055105,
+      "dec": 20.791409,
+      "redshift": 0.04059741,
+      "heldout_n": 18,
+      "abell_match": null,
+      "tempel_match": null,
+      "tempel_dr8_match": "Tempel DR8 33851"
+    },
+    {
+      "id": "SDSS-hercules-28-00",
+      "ra": 238.13595,
+      "dec": 27.672593,
+      "redshift": 0.08214476,
+      "heldout_n": 21,
+      "abell_match": null,
+      "tempel_match": null,
+      "tempel_dr8_match": "Tempel DR8 29350"
+    },
+    {
+      "id": "SDSS-hercules-29-00",
+      "ra": 235.37559,
+      "dec": 28.122581,
+      "redshift": 0.0325455,
+      "heldout_n": 14,
+      "abell_match": null,
+      "tempel_match": null,
+      "tempel_dr8_match": "Tempel DR8 69311"
+    },
+    {
+      "id": "SDSS-hercules-30-00",
+      "ra": 244.78469,
+      "dec": 24.204928,
+      "redshift": 0.066458425,
+      "heldout_n": 15,
+      "abell_match": null,
+      "tempel_match": null,
+      "tempel_dr8_match": "Tempel DR8 51137"
+    },
+    {
+      "id": "SDSS-virgo-00-00",
+      "ra": 181.40597,
+      "dec": 20.407725,
+      "redshift": 0.02413901,
+      "heldout_n": 24,
+      "abell_match": null,
+      "tempel_match": null,
+      "tempel_dr8_match": "Tempel DR8 42643"
+    }
+  ],
+  "desi_checks": [
+    {
+      "id": "SDSS-coma_leo-13-00",
+      "ra": 176.26283,
+      "dec": 33.353224,
+      "redshift": 0.031791,
+      "aperture_deg": 0.4445362050045725,
+      "redshift_half_width": 0.0016,
+      "sdss_heldout": 30,
+      "desi_aperture_window": 70,
+      "desi_aperture_parent": 90,
+      "desi_control_window": 62,
+      "desi_control_parent": 124,
+      "desi_aperture_without_sdss_input_match": 25,
+      "desi_ring_fraction": 0.5,
+      "desi_aperture_fraction": 0.7777777777777778,
+      "desi_exact_local_p": 2.6106728262894536e-05,
+      "desi_bonferroni_p": 0.0001305336413144,
+      "desi_followup_pass": true,
+      "abell_match": null,
+      "tempel_dr8_match": "Tempel DR8 18826",
+      "tempel_dr12_match": null,
+      "ned_matching_group_names": "[DRS2017] 000052, V1CG 205, RASSCALS NRGs 156, WBL 354, [DZ2015] 737, USGC U418, [TTK2017] 05743, LDCE 0838",
+      "nearest_matching_ned_group": "[DRS2017] 000052",
+      "nearest_ned_group_sep_deg": 0.0491739399429719,
+      "nearest_ned_group_delta_z": 0.000209
+    },
+    {
+      "id": "SDSS-hercules-11-00",
+      "ra": 239.06919,
+      "dec": 28.832021,
+      "redshift": 0.07712273,
+      "aperture_deg": 0.3740508779052198,
+      "redshift_half_width": 0.0016397439999999,
+      "sdss_heldout": 25,
+      "desi_aperture_window": 56,
+      "desi_aperture_parent": 98,
+      "desi_control_window": 150,
+      "desi_control_parent": 1186,
+      "desi_aperture_without_sdss_input_match": 36,
+      "desi_ring_fraction": 0.1264755480607082,
+      "desi_aperture_fraction": 0.5714285714285714,
+      "desi_exact_local_p": 1.1064083637136076e-22,
+      "desi_bonferroni_p": 5.532041818568039e-22,
+      "desi_followup_pass": true,
+      "abell_match": null,
+      "tempel_dr8_match": "Tempel DR8 29348",
+      "tempel_dr12_match": null,
+      "ned_matching_group_names": null,
+      "nearest_matching_ned_group": null,
+      "nearest_ned_group_sep_deg": null,
+      "nearest_ned_group_delta_z": null
+    },
+    {
+      "id": "SDSS-coma_leo-09-00",
+      "ra": 186.46595,
+      "dec": 31.274725,
+      "redshift": 0.0604049849999999,
+      "aperture_deg": 0.4054637229940703,
+      "redshift_half_width": 0.0016,
+      "sdss_heldout": 20,
+      "desi_aperture_window": 5,
+      "desi_aperture_parent": 8,
+      "desi_control_window": 118,
+      "desi_control_parent": 325,
+      "desi_aperture_without_sdss_input_match": 4,
+      "desi_ring_fraction": 0.3630769230769231,
+      "desi_aperture_fraction": 0.625,
+      "desi_exact_local_p": 0.1271133210308918,
+      "desi_bonferroni_p": 0.6355666051544593,
+      "desi_followup_pass": false,
+      "abell_match": null,
+      "tempel_dr8_match": "Tempel DR8 71958",
+      "tempel_dr12_match": null,
+      "ned_matching_group_names": "[LMG2022] 102, [TTK2017] 08451, [DRS2017] 000093, MSPM 01803, [TTK2017] 05436, SDSSCGB 46507, GalWCat19 1578, [TTK2017] 05437",
+      "nearest_matching_ned_group": "[LMG2022] 102",
+      "nearest_ned_group_sep_deg": 0.1023896341364251,
+      "nearest_ned_group_delta_z": 7.50150000001018e-05
+    },
+    {
+      "id": "SDSS-coma_leo-00-00",
+      "ra": 194.929225,
+      "dec": 27.932655500000003,
+      "redshift": 0.02289302,
+      "aperture_deg": 0.4092869239538102,
+      "redshift_half_width": 0.001911926,
+      "sdss_heldout": 37,
+      "desi_aperture_window": 0,
+      "desi_aperture_parent": 0,
+      "desi_control_window": 4,
+      "desi_control_parent": 14,
+      "desi_aperture_without_sdss_input_match": 0,
+      "desi_ring_fraction": 0.2857142857142857,
+      "desi_aperture_fraction": null,
+      "desi_exact_local_p": 1.0,
+      "desi_bonferroni_p": 1.0,
+      "desi_followup_pass": false,
+      "abell_match": "Abell 1656",
+      "tempel_dr8_match": "Tempel DR8 49298",
+      "tempel_dr12_match": null,
+      "ned_matching_group_names": null,
+      "nearest_matching_ned_group": null,
+      "nearest_ned_group_sep_deg": null,
+      "nearest_ned_group_delta_z": null
+    },
+    {
+      "id": "SDSS-coma_leo-03-00",
+      "ra": 178.2056,
+      "dec": 20.625473,
+      "redshift": 0.02253064,
+      "aperture_deg": 0.3603439947764653,
+      "redshift_half_width": 0.0016,
+      "sdss_heldout": 16,
+      "desi_aperture_window": 0,
+      "desi_aperture_parent": 0,
+      "desi_control_window": 0,
+      "desi_control_parent": 0,
+      "desi_aperture_without_sdss_input_match": 0,
+      "desi_ring_fraction": null,
+      "desi_aperture_fraction": null,
+      "desi_exact_local_p": 1.0,
+      "desi_bonferroni_p": 1.0,
+      "desi_followup_pass": false,
+      "abell_match": null,
+      "tempel_dr8_match": null,
+      "tempel_dr12_match": null,
+      "ned_matching_group_names": "[ETK2025] J115242.6+203753, [DZ2015] 658, [TTK2017] 06334, WBL 363, GalWCat19 1713, NGC 3937 GROUP, [EKL2017] ECO 0724, [EKL2017] ECO 4407",
+      "nearest_matching_ned_group": "[ETK2025] J115242.6+203753",
+      "nearest_ned_group_sep_deg": 0.0269388453013655,
+      "nearest_ned_group_delta_z": 0.00033064
+    }
+  ],
+  "image_leads": [
+    {
+      "id": "LS10-xmm_lss-0395",
+      "ra": 34.55648395745703,
+      "dec": -4.9674234735894425,
+      "ohia_score": 0.9523540610100568,
+      "nearest_tractor_arcsec": 5.215468461807156,
+      "nearest_ned_arcsec": 5.218536103862186,
+      "nearest_ned_source": "UKIDSS:[WQF2009] 064674",
+      "ned_within_two_arcsec": false,
+      "physically_confirmed": false,
+      "bright_star_tractor_id": "10000:301727:10548",
+      "bright_star_ra": 34.55263823791249,
+      "bright_star_dec": -4.971657036441177,
+      "bright_star_arcsec": 20.555251424343524,
+      "bright_star_r_flux_nanomaggy": 26923.66015625,
+      "spike_supported_bands": 3,
+      "g_spike_away_contrast": 1.1341291198362269,
+      "g_spike_toward_contrast": 0.9557618370745627,
+      "r_spike_away_contrast": 2.238061973496816,
+      "r_spike_toward_contrast": 1.5027281704759572,
+      "z_spike_away_contrast": 1.034201967901864,
+      "z_spike_toward_contrast": 0.7962133277356473,
+      "review_disposition": "bright_star_spike_rejected"
+    }
+  ],
+  "input_queries": [
+    {
+      "file": "abell_reference.tsv",
+      "url": "https://vizier.cfa.harvard.edu/viz-bin/asu-tsv?-source=VII%2F165A%2Fcatalog&-out.max=unlimited&-out.add=_RAJ%2C_DEJ&-oc.form=d",
+      "sha256": "d3df62bdecc1234612403544e1eda0c87676be4f71bc8750c58d6763915bdf4f",
+      "bytes": 107490
+    },
+    {
+      "file": "gaia_cancer.csv",
+      "url": "https://gea.esac.esa.int/tap-server/tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+source_id%2Cra%2Cdec%2Cparallax%2Cparallax_error%2Cpmra%2Cpmra_error%2Cpmdec%2Cpmdec_error%2Cruwe%2Cphot_g_mean_mag%2Cbp_rp+FROM+gaiadr3.gaia_source+WHERE+1%3DCONTAINS%28POINT%28%27ICRS%27%2Cra%2Cdec%29%2CCIRCLE%28%27ICRS%27%2C131.3%2C19.9%2C4.0%29%29+AND+parallax+BETWEEN+0.6+AND+17+AND+parallax_over_error%3E6+AND+ruwe%3C1.4+AND+phot_g_mean_mag%3C17.5+AND+pmra+IS+NOT+NULL+AND+pmdec+IS+NOT+NULL+AND+bp_rp+IS+NOT+NULL+ORDER+BY+source_id",
+      "sha256": "52c259e92543efe2c8c48fb1bd674cc2971aff91c5856d3fdfb3edf95a301ec9",
+      "bytes": 6868715
+    },
+    {
+      "file": "gaia_carina.csv",
+      "url": "https://gea.esac.esa.int/tap-server/tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+source_id%2Cra%2Cdec%2Cparallax%2Cparallax_error%2Cpmra%2Cpmra_error%2Cpmdec%2Cpmdec_error%2Cruwe%2Cphot_g_mean_mag%2Cbp_rp+FROM+gaiadr3.gaia_source+WHERE+1%3DCONTAINS%28POINT%28%27ICRS%27%2Cra%2Cdec%29%2CCIRCLE%28%27ICRS%27%2C128.6%2C-53.3%2C4.0%29%29+AND+parallax+BETWEEN+0.65+AND+15+AND+parallax_over_error%3E6+AND+ruwe%3C1.4+AND+phot_g_mean_mag%3C15.0+AND+pmra+IS+NOT+NULL+AND+pmdec+IS+NOT+NULL+AND+bp_rp+IS+NOT+NULL+ORDER+BY+source_id",
+      "sha256": "a0e545005f8e0a07d73329bfb2a6935e38673cf83243c6e758c4c425d1dad98e",
+      "bytes": 6535252
+    },
+    {
+      "file": "gaia_cetus.csv",
+      "url": "https://gea.esac.esa.int/tap-server/tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+source_id%2Cra%2Cdec%2Cparallax%2Cparallax_error%2Cpmra%2Cpmra_error%2Cpmdec%2Cpmdec_error%2Cruwe%2Cphot_g_mean_mag%2Cbp_rp+FROM+gaiadr3.gaia_source+WHERE+1%3DCONTAINS%28POINT%28%27ICRS%27%2Cra%2Cdec%29%2CCIRCLE%28%27ICRS%27%2C0.3%2C-29.9%2C4.0%29%29+AND+parallax+BETWEEN+0.7+AND+17+AND+parallax_over_error%3E6+AND+ruwe%3C1.4+AND+phot_g_mean_mag%3C17.5+AND+pmra+IS+NOT+NULL+AND+pmdec+IS+NOT+NULL+AND+bp_rp+IS+NOT+NULL+ORDER+BY+source_id",
+      "sha256": "827588c24dd624f46c7c98c91ed1be9d7537e8676d5e5b7249359a730b99c378",
+      "bytes": 3422029
+    },
+    {
+      "file": "gaia_perseus.csv",
+      "url": "https://gea.esac.esa.int/tap-server/tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+source_id%2Cra%2Cdec%2Cparallax%2Cparallax_error%2Cpmra%2Cpmra_error%2Cpmdec%2Cpmdec_error%2Cruwe%2Cphot_g_mean_mag%2Cbp_rp+FROM+gaiadr3.gaia_source+WHERE+1%3DCONTAINS%28POINT%28%27ICRS%27%2Cra%2Cdec%29%2CCIRCLE%28%27ICRS%27%2C51.8%2C48.9%2C4.0%29%29+AND+parallax+BETWEEN+0.45+AND+12+AND+parallax_over_error%3E6+AND+ruwe%3C1.4+AND+phot_g_mean_mag%3C15.0+AND+pmra+IS+NOT+NULL+AND+pmdec+IS+NOT+NULL+AND+bp_rp+IS+NOT+NULL+ORDER+BY+source_id",
+      "sha256": "cb4e8372375aa3a1e238aafd2a95540163a5804dc406f4167e4cd085a7cf8859",
+      "bytes": 6227461
+    },
+    {
+      "file": "gaia_reference.tsv",
+      "url": "https://vizier.cfa.harvard.edu/viz-bin/asu-tsv?-source=J%2FA%2BA%2F686%2FA42%2Fclusters&-out.max=unlimited&-out=Name%2CID%2CType%2CN%2CRA_ICRS%2CDE_ICRS%2Cr50%2CpmRA%2CpmDE%2CPlx",
+      "sha256": "3b5f03d4709c16128e0685aa98fff30ec9fc547d479c49b38fc5fcfadf1223f4",
+      "bytes": 812619
+    },
+    {
+      "file": "gaia_taurus.csv",
+      "url": "https://gea.esac.esa.int/tap-server/tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+source_id%2Cra%2Cdec%2Cparallax%2Cparallax_error%2Cpmra%2Cpmra_error%2Cpmdec%2Cpmdec_error%2Cruwe%2Cphot_g_mean_mag%2Cbp_rp+FROM+gaiadr3.gaia_source+WHERE+1%3DCONTAINS%28POINT%28%27ICRS%27%2Cra%2Cdec%29%2CCIRCLE%28%27ICRS%27%2C57.8%2C24.1%2C4.0%29%29+AND+parallax+BETWEEN+0.7+AND+17+AND+parallax_over_error%3E6+AND+ruwe%3C1.4+AND+phot_g_mean_mag%3C17.5+AND+pmra+IS+NOT+NULL+AND+pmdec+IS+NOT+NULL+AND+bp_rp+IS+NOT+NULL+ORDER+BY+source_id",
+      "sha256": "b13c6b5d95b0ccec051e36e0d23be8911788032108b5f9eff0afa44f6da574ee",
+      "bytes": 8035947
+    },
+    {
+      "file": "gaia_volans.csv",
+      "url": "https://gea.esac.esa.int/tap-server/tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+source_id%2Cra%2Cdec%2Cparallax%2Cparallax_error%2Cpmra%2Cpmra_error%2Cpmdec%2Cpmdec_error%2Cruwe%2Cphot_g_mean_mag%2Cbp_rp+FROM+gaiadr3.gaia_source+WHERE+1%3DCONTAINS%28POINT%28%27ICRS%27%2Cra%2Cdec%29%2CCIRCLE%28%27ICRS%27%2C119.9%2C-60.8%2C4.0%29%29+AND+parallax+BETWEEN+0.65+AND+15+AND+parallax_over_error%3E6+AND+ruwe%3C1.4+AND+phot_g_mean_mag%3C15.0+AND+pmra+IS+NOT+NULL+AND+pmdec+IS+NOT+NULL+AND+bp_rp+IS+NOT+NULL+ORDER+BY+source_id",
+      "sha256": "b1494eec61387a86bd2d32030f8070de32dba3d2d82e2eeeb77422419fbee65c",
+      "bytes": 5310481
+    },
+    {
+      "file": "hunt_members_281.tsv",
+      "url": "https://vizier.cfa.harvard.edu/viz-bin/asu-tsv?-source=J%2FA%2BA%2F686%2FA42%2Fmembers&-out.max=unlimited&-out=ID%2CGaiaDR3&ID=281",
+      "sha256": "c8ca6356d89d32d02b10d46754e6ff8f22293fb13ac2b9ca3a6688d868625799",
+      "bytes": 22882
+    },
+    {
+      "file": "hunt_members_325.tsv",
+      "url": "https://vizier.cfa.harvard.edu/viz-bin/asu-tsv?-source=J%2FA%2BA%2F686%2FA42%2Fmembers&-out.max=unlimited&-out=ID%2CGaiaDR3&ID=325",
+      "sha256": "694c931b930bce72c6e216fbc70970d335789942bec5a5e621314d51cbbdf7d7",
+      "bytes": 6507
+    },
+    {
+      "file": "hunt_members_4585.tsv",
+      "url": "https://vizier.cfa.harvard.edu/viz-bin/asu-tsv?-source=J%2FA%2BA%2F686%2FA42%2Fmembers&-out.max=unlimited&-out=ID%2CGaiaDR3&ID=4585",
+      "sha256": "f24449170256265da1295e2b3ed727a7a753864f069acf9f0b9bc484dded7cd7",
+      "bytes": 96458
+    },
+    {
+      "file": "hunt_members_4603.tsv",
+      "url": "https://vizier.cfa.harvard.edu/viz-bin/asu-tsv?-source=J%2FA%2BA%2F686%2FA42%2Fmembers&-out.max=unlimited&-out=ID%2CGaiaDR3&ID=4603",
+      "sha256": "fe158d023756a2dfeff533834dc43b95bada86b7d01dbacf66a768544e27f7b2",
+      "bytes": 10233
+    },
+    {
+      "file": "hunt_members_6204.tsv",
+      "url": "https://vizier.cfa.harvard.edu/viz-bin/asu-tsv?-source=J%2FA%2BA%2F686%2FA42%2Fmembers&-out.max=unlimited&-out=ID%2CGaiaDR3&ID=6204",
+      "sha256": "6e2b9c98c116c1c5a357b9ffc7cd34b79705ab3afb2955813db545987ded5a02",
+      "bytes": 4683
+    },
+    {
+      "file": "hunt_members_6801.tsv",
+      "url": "https://vizier.cfa.harvard.edu/viz-bin/asu-tsv?-source=J%2FA%2BA%2F686%2FA42%2Fmembers&-out.max=unlimited&-out=ID%2CGaiaDR3&ID=6801",
+      "sha256": "c8175ade7cf08b9971aebc7b73dbb0eb80d459a89f11ec12affd3ccb08cb5a1d",
+      "bytes": 8108
+    },
+    {
+      "file": "image_bootes.fits",
+      "url": "https://www.legacysurvey.org/viewer/fits-cutout?ra=218.2&dec=34.2&layer=ls-dr10&bands=grz&pixscale=0.35&size=768",
+      "sha256": "b107afeb91d71af330b05cc5a561805334f309d3906cb9726bb8946238e04d7a",
+      "bytes": 7081920
+    },
+    {
+      "file": "image_cosmos.fits",
+      "url": "https://www.legacysurvey.org/viewer/fits-cutout?ra=150.12&dec=2.21&layer=ls-dr10&bands=grz&pixscale=0.35&size=768",
+      "sha256": "860d1f2589f33af04f99901fbf1d1588ef6d7b607de86431d984aaccf0c7dccc",
+      "bytes": 7081920
+    },
+    {
+      "file": "image_fornax.fits",
+      "url": "https://www.legacysurvey.org/viewer/fits-cutout?ra=53.15&dec=-27.79&layer=ls-dr10&bands=grz&pixscale=0.35&size=768",
+      "sha256": "5f89d7eb5ffc60a762ed8ff13ba8c451053805059b01b02d6ce9c488805c3dde",
+      "bytes": 7081920
+    },
+    {
+      "file": "image_segue.fits",
+      "url": "https://www.legacysurvey.org/viewer/fits-cutout?ra=192.86&dec=27.13&layer=ls-dr10&bands=grz&pixscale=0.35&size=768",
+      "sha256": "959f6bca71af7df4a4b782a3eb64c723d36c67a5af8f5012a4a63a945fbb87b0",
+      "bytes": 7081920
+    },
+    {
+      "file": "image_stripe82.fits",
+      "url": "https://www.legacysurvey.org/viewer/fits-cutout?ra=35.7&dec=-0.25&layer=ls-dr10&bands=grz&pixscale=0.35&size=768",
+      "sha256": "bb5d51efff80d44fb15e19742ac992e4d070b72140ead2cda6a9a17cf4d971f8",
+      "bytes": 7081920
+    },
+    {
+      "file": "image_xmm_lss.fits",
+      "url": "https://www.legacysurvey.org/viewer/fits-cutout?ra=34.57&dec=-4.97&layer=ls-dr10&bands=grz&pixscale=0.35&size=768",
+      "sha256": "c045d0eb1383d4b2207d998fd7469576ab8139eca5c46216e785d6dfb4ac5adf",
+      "bytes": 7081920
+    },
+    {
+      "file": "kepler_binaries.tsv",
+      "url": "https://vizier.cfa.harvard.edu/viz-bin/asu-tsv?-source=J%2FAJ%2F151%2F68%2Fcatalog&-out.max=unlimited&-out=KIC%2CPer%2CBJD0",
+      "sha256": "ca1922502f4a545a0767b4cb5504f029a13711fb698d23a0f6e3e50a11fe7c4a",
+      "bytes": 102785
+    },
+    {
+      "file": "kepler_koi.csv",
+      "url": "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=select+kepid%2Ckepoi_name%2Ckoi_disposition%2Ckepler_name%2Ckoi_period%2Ckoi_time0bk%2Ckoi_duration%2Ckoi_depth%2Ckoi_fpflag_nt%2Ckoi_fpflag_ss%2Ckoi_fpflag_co%2Ckoi_kepmag+from+cumulative+order+by+kepid%2Ckepoi_name&format=csv",
+      "sha256": "bf57a13546e6d520d40bd44b2e87cdce30bd82b970fcea794eec3cb2bb538dc2",
+      "bytes": 824968
+    },
+    {
+      "file": "kepler_stellar.csv",
+      "url": "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=select+kepid%2Ckepmag%2Cradius%2Cteff%2Cdataspan%2Cdutycycle%2Crrmscdpp06p0+from+keplerstellar+where+kepmag+between+10+and+14+and+radius+between+0.5+and+1.6+and+dutycycle%3E0.85+and+dataspan%3E1350+and+teff+between+4000+and+6500+and+rrmscdpp06p0+between+0+and+100+order+by+kepid&format=csv",
+      "sha256": "e8fac3145f061bd9488643a70a91d9252ce4fdbe7aee87c57a070fe04e3cbe72",
+      "bytes": 3037945
+    },
+    {
+      "file": "kepler_tce.csv",
+      "url": "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=select+kepid%2Ctce_plnt_num%2Ctce_period%2Ctce_time0bk%2Ctce_duration%2Ctce_depth%2Ctce_max_mult_ev+as+tce_mes+from+q1_q17_dr25_tce+order+by+kepid%2Ctce_plnt_num&format=csv",
+      "sha256": "83dca34d8660cd0224b7802948c28313d3825fb5457604c9abe32a18a3455c9c",
+      "bytes": 2001533
+    },
+    {
+      "file": "ned_LS10-xmm_lss-0395.csv",
+      "url": "https://ned.ipac.caltech.edu/tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+TOP+100+prefname%2Cra%2Cdec%2Cz%2Cprefphytype%2Czflag+FROM+objdir+WHERE+CONTAINS%28POINT%28%27J2000%27%2Cra%2Cdec%29%2CCIRCLE%28%27J2000%27%2C34.55648396%2C-4.96742347%2C0.005%29%29%3D1",
+      "sha256": "3e2f9218ad37837f3983a4417c39818f0a433d1481e22766de1fd38bccb14c87",
+      "bytes": 494
+    },
+    {
+      "file": "ned_SDSS-coma_leo-03-00.csv",
+      "url": "https://ned.ipac.caltech.edu/tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+TOP+300+prefname%2Cra%2Cdec%2Cz%2Cprefphytype+FROM+objdir+WHERE+CONTAINS%28POINT%28%27J2000%27%2Cra%2Cdec%29%2CCIRCLE%28%27J2000%27%2C178.2056000%2C20.6254730%2C0.78%29%29%3D1+AND+%28prefphytype%3D%27GGroup%27+OR+prefphytype%3D%27GClstr%27+OR+prefphytype%3D%27GPair%27%29",
+      "sha256": "0ad8bcca44b5e9f989e5004b7fc72b6fd8d4bc02cd2828b8d30c6e115db94652",
+      "bytes": 7504
+    },
+    {
+      "file": "ned_SDSS-coma_leo-09-00.csv",
+      "url": "https://ned.ipac.caltech.edu/tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+TOP+300+prefname%2Cra%2Cdec%2Cz%2Cprefphytype+FROM+objdir+WHERE+CONTAINS%28POINT%28%27J2000%27%2Cra%2Cdec%29%2CCIRCLE%28%27J2000%27%2C186.4659500%2C31.2747250%2C0.78%29%29%3D1+AND+%28prefphytype%3D%27GGroup%27+OR+prefphytype%3D%27GClstr%27+OR+prefphytype%3D%27GPair%27%29",
+      "sha256": "5f1ef9c68ac278cdd3e26848246fa926ddbc6dc3fac4fcabf8d9abf5423a0933",
+      "bytes": 4301
+    },
+    {
+      "file": "ned_SDSS-coma_leo-13-00.csv",
+      "url": "https://ned.ipac.caltech.edu/tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+TOP+300+prefname%2Cra%2Cdec%2Cz%2Cprefphytype+FROM+objdir+WHERE+CONTAINS%28POINT%28%27J2000%27%2Cra%2Cdec%29%2CCIRCLE%28%27J2000%27%2C176.2628300%2C33.3532240%2C0.78%29%29%3D1+AND+%28prefphytype%3D%27GGroup%27+OR+prefphytype%3D%27GClstr%27+OR+prefphytype%3D%27GPair%27%29",
+      "sha256": "effa3e4abc109fe4e89dec85c9d8023ca267c0f1b1971d0c2c366b2c0154cd21",
+      "bytes": 4227
+    },
+    {
+      "file": "sdss_coma_leo.csv",
+      "url": "https://skyserver.sdss.org/dr18/SkyServerWS/SearchTools/SqlSearch?cmd=SELECT+specObjID%2Cra%2Cdec%2Cz%2CzErr+FROM+SpecObj+WHERE+class%3D%27GALAXY%27+AND+zWarning%3D0+AND+z+BETWEEN+0.008+AND+0.075+AND+ra+BETWEEN+169+AND+201+AND+dec+BETWEEN+14+AND+35+ORDER+BY+specObjID&format=csv",
+      "sha256": "9570a362d5229bad717253d10c478fb291d495443d5f45c942375e931e57a256",
+      "bytes": 1199311
+    },
+    {
+      "file": "sdss_hercules.csv",
+      "url": "https://skyserver.sdss.org/dr18/SkyServerWS/SearchTools/SqlSearch?cmd=SELECT+specObjID%2Cra%2Cdec%2Cz%2CzErr+FROM+SpecObj+WHERE+class%3D%27GALAXY%27+AND+zWarning%3D0+AND+z+BETWEEN+0.015+AND+0.085+AND+ra+BETWEEN+229+AND+255+AND+dec+BETWEEN+12+AND+30+ORDER+BY+specObjID&format=csv",
+      "sha256": "2a38cf04c1607e3ea0368a4bbff844c82afa597b7731181ab14f79fcb52d2e0e",
+      "bytes": 1014537
+    },
+    {
+      "file": "sdss_virgo.csv",
+      "url": "https://skyserver.sdss.org/dr18/SkyServerWS/SearchTools/SqlSearch?cmd=SELECT+specObjID%2Cra%2Cdec%2Cz%2CzErr+FROM+SpecObj+WHERE+class%3D%27GALAXY%27+AND+zWarning%3D0+AND+z+BETWEEN+0.001+AND+0.04+AND+ra+BETWEEN+175+AND+197+AND+dec+BETWEEN+1+AND+21+ORDER+BY+specObjID&format=csv",
+      "sha256": "d83c4c4d5855d8a7891e245e9367434930f22b14d423cbbedf70168671d911b9",
+      "bytes": 249728
+    },
+    {
+      "file": "tempel_dr8_coma_leo.tsv",
+      "url": "https://vizier.cfa.harvard.edu/viz-bin/asu-tsv?-source=J%2FA%2BA%2F540%2FA106%2Fdr8gr&-out.max=unlimited&-out=IDcl%2CNgal%2Czcl%2CRAJ2000%2CDEJ2000&RAJ2000=168..202&DEJ2000=13..36&zcl=0.0010..0.0820&Ngal=%3E%3D3",
+      "sha256": "a205a199aecc7412754d83f48af459a0e65b666e4a55b4164b5c29ec44d827b8",
+      "bytes": 60058
+    },
+    {
+      "file": "tempel_dr8_hercules.tsv",
+      "url": "https://vizier.cfa.harvard.edu/viz-bin/asu-tsv?-source=J%2FA%2BA%2F540%2FA106%2Fdr8gr&-out.max=unlimited&-out=IDcl%2CNgal%2Czcl%2CRAJ2000%2CDEJ2000&RAJ2000=228..256&DEJ2000=11..31&zcl=0.0080..0.0920&Ngal=%3E%3D3",
+      "sha256": "8f641875453cdada7df764027511915e182067ba3ede1c611ee6ab795e239490",
+      "bytes": 57016
+    },
+    {
+      "file": "tempel_dr8_virgo.tsv",
+      "url": "https://vizier.cfa.harvard.edu/viz-bin/asu-tsv?-source=J%2FA%2BA%2F540%2FA106%2Fdr8gr&-out.max=unlimited&-out=IDcl%2CNgal%2Czcl%2CRAJ2000%2CDEJ2000&RAJ2000=174..198&DEJ2000=0..22&zcl=0.0001..0.0470&Ngal=%3E%3D3",
+      "sha256": "1c67ec2a98e54b79a4579338eb78ceb3f8a16101e1b52e23c71e71508fefe379",
+      "bytes": 12711
+    },
+    {
+      "file": "tempel_reference.tsv",
+      "url": "https://vizier.cfa.harvard.edu/viz-bin/asu-tsv?-source=J%2FA%2BA%2F602%2FA100%2Ftable2&-out.max=unlimited&-out=GroupID%2CRAJ2000%2CDEJ2000%2CDist.c%2CNgal&Ngal=%3E%3D5&Dist.c=1..280",
+      "sha256": "577358d28eb7abe40e8825455cd4f913580ccbb20a8cfa79134696aa7f2532b5",
+      "bytes": 173377
+    },
+    {
+      "file": "tractor_bootes.fits",
+      "url": "https://www.legacysurvey.org/viewer/ls-dr10/cat.fits?ralo=218.14&rahi=218.26&declo=34.158&dechi=34.242000000000004",
+      "sha256": "8d9078e7e0820a598c26be3ba99abad6b021ce7b8c05c11bda7687bd72045712",
+      "bytes": 1316160
+    },
+    {
+      "file": "tractor_cosmos.fits",
+      "url": "https://www.legacysurvey.org/viewer/ls-dr10/cat.fits?ralo=150.06&rahi=150.18&declo=2.168&dechi=2.252",
+      "sha256": "91df0e2e8ce207d7c5c00632082d10640d496614189e5c7f0f0e48e8384c3159",
+      "bytes": 7200000
+    },
+    {
+      "file": "tractor_fornax.fits",
+      "url": "https://www.legacysurvey.org/viewer/ls-dr10/cat.fits?ralo=53.089999999999996&rahi=53.21&declo=-27.832&dechi=-27.747999999999998",
+      "sha256": "2933a88ef81b6930cd1b58472ed5d01a364641d78fd92bcb8a3cf46435a816d3",
+      "bytes": 6894720
+    },
+    {
+      "file": "tractor_segue.fits",
+      "url": "https://www.legacysurvey.org/viewer/ls-dr10/cat.fits?ralo=192.8&rahi=192.92000000000002&declo=27.087999999999997&dechi=27.172",
+      "sha256": "4a002fcfaae94ade552313023ff9585057a45dc12f4e63d851bdc8198adbb3cd",
+      "bytes": 1972800
+    },
+    {
+      "file": "tractor_stripe82.fits",
+      "url": "https://www.legacysurvey.org/viewer/ls-dr10/cat.fits?ralo=35.64&rahi=35.760000000000005&declo=-0.292&dechi=-0.208",
+      "sha256": "a82bb15a33141909aaa7a76392d79a11a1892b45c21316f07dd9f3e28a188018",
+      "bytes": 4265280
+    },
+    {
+      "file": "tractor_xmm_lss.fits",
+      "url": "https://www.legacysurvey.org/viewer/ls-dr10/cat.fits?ralo=34.51&rahi=34.63&declo=-5.012&dechi=-4.928",
+      "sha256": "700f70c87bce219670bb234656237d13b822a37868f8b81d20a9befd33260a67",
+      "bytes": 5477760
+    }
+  ],
+  "target_roster": [
+    {
+      "kepid": 2010607,
+      "cohort": "false_positive_other",
+      "split": "train",
+      "searched": true
+    },
+    {
+      "kepid": 2283308,
+      "cohort": "tce_without_koi",
+      "split": "application",
+      "searched": true
+    },
+    {
+      "kepid": 2574543,
+      "cohort": "false_positive_stellar",
+      "split": "test",
+      "searched": false
+    },
+    {
+      "kepid": 2711114,
+      "cohort": "false_positive_stellar",
+      "split": "train",
+      "searched": true
+    },
+    {
+      "kepid": 2832215,
+      "cohort": "archive_quiet_search",
+      "split": "application",
+      "searched": true
+    },
+    {
+      "kepid": 2837111,
+      "cohort": "confirmed_other",
+      "split": "train",
+      "searched": true
+    },
+    {
+      "kepid": 3002478,
+      "cohort": "koi_candidate",
+      "split": "application",
+      "searched": false
+    },
+    {
+      "kepid": 3120308,
+      "cohort": "false_positive_other",
+      "split": "train",
+      "searched": true
+    },
+    {
+      "kepid": 3231137,
+      "cohort": "false_positive_stellar",
+      "split": "calibration",
+      "searched": true
+    },
+    {
+      "kepid": 3340360,
+      "cohort": "tce_without_koi",
+      "split": "application",
+      "searched": true
+    },
+    {
+      "kepid": 3345973,
+      "cohort": "false_positive_other",
+      "split": "test",
+      "searched": true
+    },
+    {
+      "kepid": 3540550,
+      "cohort": "archive_quiet_search",
+      "split": "application",
+      "searched": true
+    },
+    {
+      "kepid": 3633614,
+      "cohort": "archive_quiet_search",
+      "split": "application",
+      "searched": true
+    },
+    {
+      "kepid": 3642741,
+      "cohort": "false_positive_other",
+      "split": "train",
+      "searched": true
+    },
+    {
+      "kepid": 3839098,
+      "cohort": "archive_quiet_search",
+      "split": "application",
+      "searched": true
+    },
+    {
+      "kepid": 3937519,
+      "cohort": "confirmed_other",
+      "split": "train",
+      "searched": true
+    },
+    {
+      "kepid": 3968961,
+      "cohort": "tce_without_koi",
+      "split": "application",
+      "searched": false
+    },
+    {
+      "kepid": 4141587,
+      "cohort": "false_positive_other",
+      "split": "train",
+      "searched": true
+    },
+    {
+      "kepid": 4157325,
+      "cohort": "confirmed_multi",
+      "split": "train",
+      "searched": true
+    },
+    {
+      "kepid": 4180401,
+      "cohort": "false_positive_stellar",
+      "split": "test",
+      "searched": false
+    },
+    {
+      "kepid": 4253413,
+      "cohort": "tce_without_koi",
+      "split": "application",
+      "searched": true
+    },
+    {
+      "kepid": 4349452,
+      "cohort": "confirmed_multi",
+      "split": "calibration",
+      "searched": true
+    },
+    {
+      "kepid": 4359851,
+      "cohort": "tce_without_koi",
+      "split": "application",
+      "searched": false
+    },
+    {
+      "kepid": 4543822,
+      "cohort": "archive_quiet_search",
+      "split": "application",
+      "searched": true
+    },
+    {
+      "kepid": 4545187,
+      "cohort": "confirmed_other",
+      "split": "train",
+      "searched": true
+    },
+    {
+      "kepid": 4548187,
+      "cohort": "archive_quiet_search",
+      "split": "application",
+      "searched": true
+    },
+    {
+      "kepid": 4563268,
+      "cohort": "confirmed_other",
+      "split": "train",
+      "searched": true
+    },
+    {
+      "kepid": 4644952,
+      "cohort": "confirmed_multi",
+      "split": "train",
+      "searched": true
+    },
+    {
+      "kepid": 4649300,
+      "cohort": "archive_quiet_search",
+      "split": "application",
+      "searched": true
+    },
+    {
+      "kepid": 4677282,
+      "cohort": "false_positive_stellar",
+      "split": "calibration",
+      "searched": true
+    },
+    {
+      "kepid": 4829715,
+      "cohort": "archive_quiet_search",
+      "split": "application",
+      "searched": true
+    },
+    {
+      "kepid": 4860932,
+      "cohort": "false_positive_stellar",
+      "split": "train",
+      "searched": true
+    },
+    {
+      "kepid": 4914423,
+      "cohort": "confirmed_other",
+      "split": "calibration",
+      "searched": true
+    },
+    {
+      "kepid": 5004478,
+      "cohort": "archive_quiet_search",
+      "split": "application",
+      "searched": true
+    },
+    {
+      "kepid": 5008245,
+      "cohort": "koi_candidate",
+      "split": "application",
+      "searched": false
+    },
+    {
+      "kepid": 5092710,
+      "cohort": "archive_quiet_search",
+      "split": "application",
+      "searched": true
+    },
+    {
+      "kepid": 5094751,
+      "cohort": "confirmed_other",
+      "split": "train",
+      "searched": true
+    },
+    {
+      "kepid": 5122112,
+      "cohort": "false_positive_stellar",
+      "split": "test",
+      "searched": true
+    },
+    {
+      "kepid": 5130563,
+      "cohort": "false_positive_other",
+      "split": "calibration",
+      "searched": true
+    },
+    {
+      "kepid": 5192090,
+      "cohort": "tce_without_koi",
+      "split": "application",
+      "searched": false
+    },
+    {
+      "kepid": 5213157,
+      "cohort": "tce_without_koi",
+      "split": "application",
+      "searched": true
+    },
+    {
+      "kepid": 5282051,
+      "cohort": "false_positive_other",
+      "split": "test",
+      "searched": false
+    },
+    {
+      "kepid": 5301750,
+      "cohort": "confirmed_multi",
+      "split": "train",
+      "searched": true
+    },
+    {
+      "kepid": 5397166,
+      "cohort": "false_positive_stellar",
+      "split": "train",
+      "searched": true
+    },
+    {
+      "kepid": 5443837,
+      "cohort": "koi_candidate",
+      "split": "application",
+      "searched": true
+    },
+    {
+      "kepid": 5478055,
+      "cohort": "false_positive_other",
+      "split": "train",
+      "searched": true
+    },
+    {
+      "kepid": 5547480,
+      "cohort": "false_positive_stellar",
+      "split": "test",
+      "searched": false
+    },
+    {
+      "kepid": 5706966,
+      "cohort": "confirmed_other",
+      "split": "train",
+      "searched": true
+    },
+    {
+      "kepid": 5709725,
+      "cohort": "confirmed_other",
+      "split": "calibration",
+      "searched": true
+    },
+    {
+      "kepid": 5716508,
+      "cohort": "false_positive_other",
+      "split": "train",
+      "searched": false
+    },
+    {
+      "kepid": 5728139,
+      "cohort": "confirmed_other",
+      "split": "train",
+      "searched": true
+    },
+    {
+      "kepid": 5780930,
+      "cohort": "confirmed_other",
+      "split": "train",
+      "searched": true
+    },
+    {
+      "kepid": 6066772,
+      "cohort": "archive_quiet_search",
+      "split": "application",
+      "searched": true
+    },
+    {
+      "kepid": 6142317,
+      "cohort": "archive_quiet_search",
+      "split": "application",
+      "searched": true
+    },
+    {
+      "kepid": 6184894,
+      "cohort": "confirmed_other",
+      "split": "train",
+      "searched": false
+    },
+    {
+      "kepid": 6301235,
+      "cohort": "archive_quiet_search",
+      "split": "application",
+      "searched": true
+    },
+    {
+      "kepid": 6309763,
+      "cohort": "koi_candidate",
+      "split": "application",
+      "searched": true
+    },
+    {
+      "kepid": 6365156,
+      "cohort": "confirmed_other",
+      "split": "calibration",
+      "searched": true
+    },
+    {
+      "kepid": 6422367,
+      "cohort": "false_positive_other",
+      "split": "test",
+      "searched": false
+    },
+    {
+      "kepid": 6425957,
+      "cohort": "confirmed_other",
+      "split": "calibration",
+      "searched": false
+    },
+    {
+      "kepid": 6500206,
+      "cohort": "false_positive_stellar",
+      "split": "train",
+      "searched": false
+    },
+    {
+      "kepid": 6508221,
+      "cohort": "confirmed_other",
+      "split": "train",
+      "searched": true
+    },
+    {
+      "kepid": 6509282,
+      "cohort": "koi_candidate",
+      "split": "application",
+      "searched": true
+    },
+    {
+      "kepid": 6521045,
+      "cohort": "confirmed_other",
+      "split": "train",
+      "searched": true
+    },
+    {
+      "kepid": 6541920,
+      "cohort": "confirmed_multi",
+      "split": "test",
+      "searched": true
+    },
+    {
+      "kepid": 6606282,
+      "cohort": "false_positive_stellar",
+      "split": "train",
+      "searched": true
+    },
+    {
+      "kepid": 6677256,
+      "cohort": "false_positive_stellar",
+      "split": "train",
+      "searched": true
+    },
+    {
+      "kepid": 6692833,
+      "cohort": "false_positive_other",
+      "split": "calibration",
+      "searched": true
+    },
+    {
+      "kepid": 6699368,
+      "cohort": "false_positive_other",
+      "split": "train",
+      "searched": true
+    },
+    {
+      "kepid": 6751874,
+      "cohort": "confirmed_other",
+      "split": "train",
+      "searched": true
+    },
+    {
+      "kepid": 6762188,
+      "cohort": "false_positive_stellar",
+      "split": "test",
+      "searched": true
+    },
+    {
+      "kepid": 6779260,
+      "cohort": "confirmed_other",
+      "split": "train",
+      "searched": true
+    },
+    {
+      "kepid": 6782515,
+      "cohort": "archive_quiet_search",
+      "split": "application",
+      "searched": true
+    },
+    {
+      "kepid": 6878167,
+      "cohort": "false_positive_stellar",
+      "split": "train",
+      "searched": true
+    },
+    {
+      "kepid": 6890132,
+      "cohort": "archive_quiet_search",
+      "split": "application",
+      "searched": true
+    },
+    {
+      "kepid": 6890618,
+      "cohort": "false_positive_other",
+      "split": "train",
+      "searched": true
+    },
+    {
+      "kepid": 6891543,
+      "cohort": "false_positive_other",
+      "split": "calibration",
+      "searched": true
+    },
+    {
+      "kepid": 6891998,
+      "cohort": "tce_without_koi",
+      "split": "application",
+      "searched": false
+    },
+    {
+      "kepid": 7046804,
+      "cohort": "confirmed_other",
+      "split": "train",
+      "searched": true
+    },
+    {
+      "kepid": 7097965,
+      "cohort": "confirmed_other",
+      "split": "calibration",
+      "searched": false
+    },
+    {
+      "kepid": 7101038,
+      "cohort": "archive_quiet_search",
+      "split": "application",
+      "searched": true
+    },
+    {
+      "kepid": 7124613,
+      "cohort": "confirmed_other",
+      "split": "train",
+      "searched": true
+    },
+    {
+      "kepid": 7200014,
+      "cohort": "tce_without_koi",
+      "split": "application",
+      "searched": true
+    },
+    {
+      "kepid": 7376490,
+      "cohort": "false_positive_stellar",
+      "split": "calibration",
+      "searched": true
+    },
+    {
+      "kepid": 7440748,
+      "cohort": "confirmed_multi",
+      "split": "test",
+      "searched": true
+    },
+    {
+      "kepid": 7592038,
+      "cohort": "tce_without_koi",
+      "split": "application",
+      "searched": true
+    },
+    {
+      "kepid": 7750216,
+      "cohort": "tce_without_koi",
+      "split": "application",
+      "searched": false
+    },
+    {
+      "kepid": 7750590,
+      "cohort": "archive_quiet_search",
+      "split": "application",
+      "searched": true
+    },
+    {
+      "kepid": 7812179,
+      "cohort": "false_positive_stellar",
+      "split": "calibration",
+      "searched": true
+    },
+    {
+      "kepid": 7831264,
+      "cohort": "confirmed_multi",
+      "split": "calibration",
+      "searched": true
+    },
+    {
+      "kepid": 7838906,
+      "cohort": "false_positive_stellar",
+      "split": "train",
+      "searched": true
+    },
+    {
+      "kepid": 7943535,
+      "cohort": "false_positive_stellar",
+      "split": "train",
+      "searched": true
+    },
+    {
+      "kepid": 7983756,
+      "cohort": "false_positive_stellar",
+      "split": "calibration",
+      "searched": true
+    },
+    {
+      "kepid": 8008067,
+      "cohort": "confirmed_multi",
+      "split": "train",
+      "searched": true
+    },
+    {
+      "kepid": 8088050,
+      "cohort": "archive_quiet_search",
+      "split": "application",
+      "searched": true
+    },
+    {
+      "kepid": 8125917,
+      "cohort": "koi_candidate",
+      "split": "application",
+      "searched": false
+    },
+    {
+      "kepid": 8142942,
+      "cohort": "confirmed_other",
+      "split": "train",
+      "searched": true
+    },
+    {
+      "kepid": 8162789,
+      "cohort": "confirmed_other",
+      "split": "train",
+      "searched": true
+    },
+    {
+      "kepid": 8240797,
+      "cohort": "confirmed_multi",
+      "split": "train",
+      "searched": true
+    },
+    {
+      "kepid": 8248939,
+      "cohort": "false_positive_other",
+      "split": "train",
+      "searched": true
+    },
+    {
+      "kepid": 8265204,
+      "cohort": "tce_without_koi",
+      "split": "application",
+      "searched": true
+    },
+    {
+      "kepid": 8321192,
+      "cohort": "archive_quiet_search",
+      "split": "application",
+      "searched": true
+    },
+    {
+      "kepid": 8344004,
+      "cohort": "confirmed_multi",
+      "split": "train",
+      "searched": true
+    },
+    {
+      "kepid": 8358008,
+      "cohort": "false_positive_stellar",
+      "split": "train",
+      "searched": true
+    },
+    {
+      "kepid": 8359498,
+      "cohort": "confirmed_other",
+      "split": "test",
+      "searched": true
+    },
+    {
+      "kepid": 8364115,
+      "cohort": "false_positive_stellar",
+      "split": "train",
+      "searched": true
+    },
+    {
+      "kepid": 8367093,
+      "cohort": "archive_quiet_search",
+      "split": "application",
+      "searched": true
+    },
+    {
+      "kepid": 8382339,
+      "cohort": "false_positive_other",
+      "split": "train",
+      "searched": false
+    },
+    {
+      "kepid": 8428067,
+      "cohort": "archive_quiet_search",
+      "split": "application",
+      "searched": true
+    },
+    {
+      "kepid": 8435693,
+      "cohort": "archive_quiet_search",
+      "split": "application",
+      "searched": true
+    },
+    {
+      "kepid": 8524346,
+      "cohort": "false_positive_other",
+      "split": "train",
+      "searched": true
+    },
+    {
+      "kepid": 8591173,
+      "cohort": "confirmed_other",
+      "split": "test",
+      "searched": true
+    },
+    {
+      "kepid": 8616637,
+      "cohort": "confirmed_multi",
+      "split": "train",
+      "searched": true
+    },
+    {
+      "kepid": 8644288,
+      "cohort": "confirmed_multi",
+      "split": "train",
+      "searched": true
+    },
+    {
+      "kepid": 8711794,
+      "cohort": "confirmed_other",
+      "split": "test",
+      "searched": true
+    },
+    {
+      "kepid": 8716028,
+      "cohort": "tce_without_koi",
+      "split": "application",
+      "searched": true
+    },
+    {
+      "kepid": 8736943,
+      "cohort": "archive_quiet_search",
+      "split": "application",
+      "searched": true
+    },
+    {
+      "kepid": 8773869,
+      "cohort": "false_positive_other",
+      "split": "train",
+      "searched": true
+    },
+    {
+      "kepid": 8802165,
+      "cohort": "confirmed_other",
+      "split": "test",
+      "searched": true
+    },
+    {
+      "kepid": 8848115,
+      "cohort": "false_positive_stellar",
+      "split": "test",
+      "searched": false
+    },
+    {
+      "kepid": 8904714,
+      "cohort": "false_positive_other",
+      "split": "test",
+      "searched": false
+    },
+    {
+      "kepid": 8915153,
+      "cohort": "archive_quiet_search",
+      "split": "application",
+      "searched": true
+    },
+    {
+      "kepid": 8950568,
+      "cohort": "confirmed_multi",
+      "split": "test",
+      "searched": true
+    },
+    {
+      "kepid": 8963721,
+      "cohort": "false_positive_other",
+      "split": "calibration",
+      "searched": true
+    },
+    {
+      "kepid": 9006594,
+      "cohort": "archive_quiet_search",
+      "split": "application",
+      "searched": true
+    },
+    {
+      "kepid": 9042357,
+      "cohort": "false_positive_stellar",
+      "split": "train",
+      "searched": true
+    },
+    {
+      "kepid": 9048161,
+      "cohort": "false_positive_stellar",
+      "split": "train",
+      "searched": true
+    },
+    {
+      "kepid": 9118340,
+      "cohort": "false_positive_other",
+      "split": "train",
+      "searched": true
+    },
+    {
+      "kepid": 9145444,
+      "cohort": "archive_quiet_search",
+      "split": "application",
+      "searched": true
+    },
+    {
+      "kepid": 9150676,
+      "cohort": "archive_quiet_search",
+      "split": "application",
+      "searched": true
+    },
+    {
+      "kepid": 9157634,
+      "cohort": "confirmed_other",
+      "split": "test",
+      "searched": true
+    },
+    {
+      "kepid": 9177629,
+      "cohort": "confirmed_other",
+      "split": "train",
+      "searched": true
+    },
+    {
+      "kepid": 9226230,
+      "cohort": "archive_quiet_search",
+      "split": "application",
+      "searched": true
+    },
+    {
+      "kepid": 9226540,
+      "cohort": "tce_without_koi",
+      "split": "application",
+      "searched": true
+    },
+    {
+      "kepid": 9229318,
+      "cohort": "tce_without_koi",
+      "split": "application",
+      "searched": true
+    },
+    {
+      "kepid": 9278021,
+      "cohort": "false_positive_stellar",
+      "split": "test",
+      "searched": true
+    },
+    {
+      "kepid": 9300285,
+      "cohort": "false_positive_other",
+      "split": "train",
+      "searched": true
+    },
+    {
+      "kepid": 9364290,
+      "cohort": "confirmed_other",
+      "split": "train",
+      "searched": true
+    },
+    {
+      "kepid": 9411943,
+      "cohort": "false_positive_stellar",
+      "split": "train",
+      "searched": true
+    },
+    {
+      "kepid": 9412760,
+      "cohort": "confirmed_other",
+      "split": "train",
+      "searched": true
+    },
+    {
+      "kepid": 9458613,
+      "cohort": "confirmed_other",
+      "split": "test",
+      "searched": true
+    },
+    {
+      "kepid": 9551596,
+      "cohort": "archive_quiet_search",
+      "split": "application",
+      "searched": true
+    },
+    {
+      "kepid": 9552608,
+      "cohort": "koi_candidate",
+      "split": "application",
+      "searched": true
+    },
+    {
+      "kepid": 9595725,
+      "cohort": "archive_quiet_search",
+      "split": "application",
+      "searched": true
+    },
+    {
+      "kepid": 9631762,
+      "cohort": "confirmed_other",
+      "split": "train",
+      "searched": true
+    },
+    {
+      "kepid": 9763348,
+      "cohort": "confirmed_other",
+      "split": "test",
+      "searched": true
+    },
+    {
+      "kepid": 9815053,
+      "cohort": "koi_candidate",
+      "split": "application",
+      "searched": true
+    },
+    {
+      "kepid": 9887784,
+      "cohort": "archive_quiet_search",
+      "split": "application",
+      "searched": true
+    },
+    {
+      "kepid": 9892816,
+      "cohort": "confirmed_other",
+      "split": "calibration",
+      "searched": true
+    },
+    {
+      "kepid": 10001368,
+      "cohort": "confirmed_other",
+      "split": "train",
+      "searched": false
+    },
+    {
+      "kepid": 10016874,
+      "cohort": "koi_candidate",
+      "split": "application",
+      "searched": true
+    },
+    {
+      "kepid": 10019399,
+      "cohort": "false_positive_stellar",
+      "split": "train",
+      "searched": true
+    },
+    {
+      "kepid": 10139305,
+      "cohort": "false_positive_stellar",
+      "split": "train",
+      "searched": true
+    },
+    {
+      "kepid": 10147550,
+      "cohort": "archive_quiet_search",
+      "split": "application",
+      "searched": true
+    },
+    {
+      "kepid": 10232123,
+      "cohort": "false_positive_other",
+      "split": "test",
+      "searched": false
+    },
+    {
+      "kepid": 10318874,
+      "cohort": "confirmed_other",
+      "split": "train",
+      "searched": true
+    },
+    {
+      "kepid": 10328393,
+      "cohort": "confirmed_multi",
+      "split": "train",
+      "searched": true
+    },
+    {
+      "kepid": 10337258,
+      "cohort": "confirmed_other",
+      "split": "train",
+      "searched": true
+    },
+    {
+      "kepid": 10395543,
+      "cohort": "koi_candidate",
+      "split": "application",
+      "searched": true
+    },
+    {
+      "kepid": 10454313,
+      "cohort": "confirmed_other",
+      "split": "train",
+      "searched": true
+    },
+    {
+      "kepid": 10468514,
+      "cohort": "false_positive_stellar",
+      "split": "train",
+      "searched": false
+    },
+    {
+      "kepid": 10482160,
+      "cohort": "confirmed_other",
+      "split": "test",
+      "searched": false
+    },
+    {
+      "kepid": 10489206,
+      "cohort": "confirmed_multi",
+      "split": "train",
+      "searched": false
+    },
+    {
+      "kepid": 10788461,
+      "cohort": "confirmed_multi",
+      "split": "calibration",
+      "searched": false
+    },
+    {
+      "kepid": 10843590,
+      "cohort": "confirmed_other",
+      "split": "train",
+      "searched": true
+    },
+    {
+      "kepid": 10844890,
+      "cohort": "koi_candidate",
+      "split": "application",
+      "searched": true
+    },
+    {
+      "kepid": 10855399,
+      "cohort": "archive_quiet_search",
+      "split": "application",
+      "searched": true
+    },
+    {
+      "kepid": 10925104,
+      "cohort": "confirmed_multi",
+      "split": "test",
+      "searched": true
+    },
+    {
+      "kepid": 10934556,
+      "cohort": "tce_without_koi",
+      "split": "application",
+      "searched": false
+    },
+    {
+      "kepid": 10934674,
+      "cohort": "confirmed_other",
+      "split": "test",
+      "searched": false
+    },
+    {
+      "kepid": 10990917,
+      "cohort": "confirmed_other",
+      "split": "train",
+      "searched": false
+    },
+    {
+      "kepid": 11029877,
+      "cohort": "false_positive_stellar",
+      "split": "test",
+      "searched": true
+    },
+    {
+      "kepid": 11197934,
+      "cohort": "tce_without_koi",
+      "split": "application",
+      "searched": true
+    },
+    {
+      "kepid": 11361646,
+      "cohort": "confirmed_other",
+      "split": "calibration",
+      "searched": true
+    },
+    {
+      "kepid": 11402995,
+      "cohort": "confirmed_other",
+      "split": "test",
+      "searched": true
+    },
+    {
+      "kepid": 11519790,
+      "cohort": "archive_quiet_search",
+      "split": "application",
+      "searched": true
+    },
+    {
+      "kepid": 11565544,
+      "cohort": "koi_candidate",
+      "split": "application",
+      "searched": true
+    },
+    {
+      "kepid": 11569475,
+      "cohort": "false_positive_other",
+      "split": "test",
+      "searched": true
+    },
+    {
+      "kepid": 11571093,
+      "cohort": "archive_quiet_search",
+      "split": "application",
+      "searched": true
+    },
+    {
+      "kepid": 11607008,
+      "cohort": "archive_quiet_search",
+      "split": "application",
+      "searched": true
+    },
+    {
+      "kepid": 11656246,
+      "cohort": "confirmed_other",
+      "split": "test",
+      "searched": true
+    },
+    {
+      "kepid": 11662513,
+      "cohort": "tce_without_koi",
+      "split": "application",
+      "searched": true
+    },
+    {
+      "kepid": 11673674,
+      "cohort": "false_positive_stellar",
+      "split": "train",
+      "searched": true
+    },
+    {
+      "kepid": 11702948,
+      "cohort": "koi_candidate",
+      "split": "application",
+      "searched": true
+    },
+    {
+      "kepid": 11760542,
+      "cohort": "archive_quiet_search",
+      "split": "application",
+      "searched": true
+    },
+    {
+      "kepid": 11771578,
+      "cohort": "archive_quiet_search",
+      "split": "application",
+      "searched": true
+    },
+    {
+      "kepid": 11853878,
+      "cohort": "confirmed_multi",
+      "split": "train",
+      "searched": true
+    },
+    {
+      "kepid": 11954842,
+      "cohort": "confirmed_other",
+      "split": "calibration",
+      "searched": true
+    },
+    {
+      "kepid": 11974307,
+      "cohort": "archive_quiet_search",
+      "split": "application",
+      "searched": true
+    },
+    {
+      "kepid": 12055539,
+      "cohort": "confirmed_other",
+      "split": "train",
+      "searched": true
+    },
+    {
+      "kepid": 12062667,
+      "cohort": "false_positive_other",
+      "split": "train",
+      "searched": true
+    },
+    {
+      "kepid": 12253474,
+      "cohort": "koi_candidate",
+      "split": "application",
+      "searched": true
+    },
+    {
+      "kepid": 12351666,
+      "cohort": "archive_quiet_search",
+      "split": "application",
+      "searched": true
+    },
+    {
+      "kepid": 12401132,
+      "cohort": "koi_candidate",
+      "split": "application",
+      "searched": false
+    },
+    {
+      "kepid": 12458651,
+      "cohort": "archive_quiet_search",
+      "split": "application",
+      "searched": true
+    },
+    {
+      "kepid": 12459913,
+      "cohort": "confirmed_other",
+      "split": "train",
+      "searched": true
+    },
+    {
+      "kepid": 12555240,
+      "cohort": "archive_quiet_search",
+      "split": "application",
+      "searched": true
+    },
+    {
+      "kepid": 12645761,
+      "cohort": "false_positive_stellar",
+      "split": "train",
+      "searched": true
+    }
+  ]
+}
